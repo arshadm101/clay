@@ -41,13 +41,13 @@ const Faqs = () => {
 <br/><br/>
 However, our passion for branding and the demand from our clients led us to expand our offering to provide full-service brand design practice and web design and development of marketing websites.
 <br/><br/>
-Today, our projects encompass a wide range, from building new products and defining brands to revitalizing existing mobile apps, websites, and enterprise software. We specialize in crafting digital products that wholeheartedly embody the brand's personality and deliver delightful experiences to your customers.
+Today, our projects encompass a wide range, from building new products and defining brands to revitalizing existing mobile apps, websites, and enterprise software. We specialize in crafting digital products that wholeheartedly embody the brand&apos;s personality and deliver delightful experiences to your customers.
 <br/><br/>
 Our team handles every aspect required to bring a digital product to life. This includes user research, product strategy, branding, user interface and experience design, usability testing, prototyping, web design, and development.
 <br/><br/>
 Furthermore, we boast an in-house content production studio that provides creative direction, 2D/3D design, illustration and iconography, motion design, animation, sound design, photo/video, and copywriting services.
 <br/><br/>
-For web projects, we integrate considerations for SEO into our process to ensure that our client's websites are optimized for search engines; however, SEO is not offered as a standalone service. 
+For web projects, we integrate considerations for SEO into our process to ensure that our client&apos;s websites are optimized for search engines; however, SEO is not offered as a standalone service. 
 </p>
                                     </Accordion.Body>
                                     </Accordion.Item>
@@ -56,7 +56,8 @@ For web projects, we integrate considerations for SEO into our process to ensure
                                             onMouseLeave={handleHover}
                                             onClick={handleClick} className={styles.accordionHeader}>What separates Clay from other branding and web design agencies?</Accordion.Header>
                                             <Accordion.Body className={styles.para}>
-<p>In a saturated market of excellent UX design and branding agencies, it's challenging to stand out. At Clay, we believe our client's success is intertwined with our own. We forge enduring partnerships based on trust and mutual growth, going beyond world-class services.
+
+<p>In a saturated market of excellent UX design and branding agencies, it&apos;s challenging to stand out. At Clay, we believe our client&apos;s success is intertwined with our own. We forge enduring partnerships based on trust and mutual growth, going beyond world-class services.
 <br/><br/>
 When you choose us, you collaborate directly with our dedicated team, who genuinely care about your success. Our cofounders oversee every project, while a design director leads the way, ensuring thorough design reviews and involvement in project details.
 <br/><br/>
@@ -71,15 +72,17 @@ Lastly, we specialize in creating scalable designs that support your long-term b
                                     <Accordion.Item eventKey="2" onMouseEnter={handleHover}
                                             onMouseLeave={handleHover}
                                             onClick={handleClick}  className={styles.accordionitemHome}>
-                                            <Accordion.Header className={styles.accordionHeader}>Do you work with clients in different timezones?</Accordion.Header>
+                                            <Accordion.Header className={styles.accordionHeader}>
+                                                Do you work with clients in different timezones?                </Accordion.Header>
                                     <Accordion.Body  className={styles.para}>
+                                              
                                                 <p>We have extensive experience working with clients in various time zones. Based in San Francisco, we operate as a remote-first company with team members across the United States, Europe, and South-East Asia. This global presence allows us to serve clients worldwide, regardless of location.
                                                 <br/><br/>
 
-                                                Over the past 12 years, we have perfected our remote collaboration model, enabling seamless work with clients from Saudi Arabia, China, Australia, Germany, the UK, and many other countries. We understand the challenges of different time zones and have implemented effective communication and project management strategies to overcome them.<br/><br/>
-                                                Our team excels at coordinating and scheduling meetings to accommodate clients' time preferences and availability across different regions. We prioritize clear and timely communication, leveraging various collaboration tools and platforms to maintain constant connectivity and streamline project workflows.<br/><br/>
+                    Over the past 12 years, we have perfected our remote collaboration model, enabling seamless work with clients from Saudi Arabia, China, Australia, Germany, the UK, and many other countries. We understand the challenges of different time zones and have implemented effective communication and project management strategies to overcome them.<br/><br/>
+                                                Our team excels at coordinating and scheduling meetings to accommodate clients&apos; time preferences and availability across different regions. We prioritize clear and timely communication, leveraging various collaboration tools and platforms to maintain constant connectivity and streamline project workflows.<br/><br/>
 
-                                                Working with clients across diverse time zones has expanded our agency's capabilities and deepened our understanding of global markets. It has fostered an adaptive and efficient culture within our team, allowing us to consistently deliver exceptional results while respecting and embracing our clients' unique needs and perspectives worldwide.                                      </p>
+                                                Working with clients across diverse time zones has expanded our agency&apos;s capabilities and deepened our understanding of global markets. It has fostered an adaptive and efficient culture within our team, allowing us to consistently deliver exceptional results while respecting and embracing our clients&apos; unique needs and perspectives worldwide.                                      </p>
                                         </Accordion.Body>
                                     </Accordion.Item>
                                     <Accordion.Item eventKey="3" onMouseEnter={handleHover}
@@ -112,9 +115,9 @@ Lastly, we specialize in creating scalable designs that support your long-term b
                                             onClick={handleClick}  className={styles.accordionitemHome}>
                                     <Accordion.Header className={styles.accordionHeader}>Can you help us redesign our B2B/enterprise software?</Accordion.Header>
                                     <Accordion.Body  className={styles.para}>
-                                            <p>We're one of the few user experience agencies focusing on enterprise UX design and the digital transformation of legacy business software. Our years of experience have allowed us to refine our process, enabling us to revitalize B2B software for top-tier Fortune 100 companies like ADP, Amazon, VMware, and Cisco.
+                                            <p>We&apos;re one of the few user experience agencies focusing on enterprise UX design and the digital transformation of legacy business software. Our years of experience have allowed us to refine our process, enabling us to revitalize B2B software for top-tier Fortune 100 companies like ADP, Amazon, VMware, and Cisco.
                                             </p>
-                                            <p>Through our ultra-collaborative process and design thinking approach, we create consumer-grade user experiences for business users. We prioritize scalability and longevity by empowering our clients' in-house teams with robust design systems. This ensures continuity and adaptability, enabling the organization to evolve and grow seamlessly.</p>
+                                            <p>Through our ultra-collaborative process and design thinking approach, we create consumer-grade user experiences for business users. We prioritize scalability and longevity by empowering our clients&apos; in-house teams with robust design systems. This ensures continuity and adaptability, enabling the organization to evolve and grow seamlessly.</p>
                                             <p>We usually function as an independent unit within the organizational structure. Operating like a startup, we inject agility and fresh perspectives into the sometimes bureaucratic enterprise environment. This approach helps us navigate complex hierarchies and decision-making processes swiftly and efficiently, delivering innovative solutions.</p>
                                            
                                         </Accordion.Body>

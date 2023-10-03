@@ -54,8 +54,7 @@ const BrandCollaps = () => {
                                             onClick={handleClick}>Branding</Accordion.Header>
                                             <Accordion.Body>
                                                 <p>
-                                                    A brand is more than just a logo and color palette. We will craft a distinct visual and verbal identity, create necessary assets, and establish clear brand guidelines to maintain consistency across all
-                                                    touchpoints. </p>
+                                                    A brand is more than just a logo and color palette. We will craft a distinct visual and verbal identity, create necessary assets, and establish clear brand guidelines to maintain consistency across all touchpoints. </p>
                                             </Accordion.Body>
                                     </Accordion.Item>
                                     <Accordion.Item eventKey="1">
@@ -72,7 +71,7 @@ const BrandCollaps = () => {
                                             onClick={handleClick}>
                                             <Accordion.Header>Websites</Accordion.Header>
                                             <Accordion.Body>
-                                                <p>A modern brand is defined by its digital presence, starting with the website. We focus on creating websites that effectively convey the brand's identity and perspective for an enhanced user experience.</p>
+                                                <p>A modern brand is defined by its digital presence, starting with the website. We focus on creating websites that effectively convey the brand&apos;s identity and perspective for an enhanced user experience.</p>
                                             </Accordion.Body>
                                     </Accordion.Item>
                                     <Accordion.Item eventKey="3" onMouseEnter={handleHover}
