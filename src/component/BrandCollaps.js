@@ -71,7 +71,7 @@ const BrandCollaps = () => {
                                             onClick={handleClick}>
                                             <Accordion.Header>Websites</Accordion.Header>
                                             <Accordion.Body>
-                                                <p>A modern brand is defined by its digital presence, starting with the website. We focus on creating websites that effectively convey the brand&apos;s identity and perspective for an enhanced user experience.</p>
+                                                <p>A modern brand is defined by its digital presence, starting with the website. We focus on creating websites that effectively convey the brands identity and perspective for an enhanced user experience.</p>
                                             </Accordion.Body>
                                     </Accordion.Item>
                                     <Accordion.Item eventKey="3" onMouseEnter={handleHover}
