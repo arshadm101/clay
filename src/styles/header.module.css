@@ -1,0 +1,15 @@
+.Homeheader .nav-link{
+    color: black;
+}
+
+.header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: UniversalSans-500, Arial,sans-serif;
+}
+
+.scrollimagecontainer{
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+}

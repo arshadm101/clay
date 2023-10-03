@@ -1,0 +1,109 @@
+    .web1{
+        transform: scale(1.07);
+        transition: all 1.5s var(--easeOutExpo);
+    }
+
+    /* styles/ShaderImage.css */
+.image-container {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+  }
+  
+  .image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    transition: filter 0.3s, transform 0.3s;
+  }
+  
+  .shader-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+  }
+  
+  .image-container:hover .image {
+    filter: grayscale(1) blur(5px);
+    transform: scale(1.1);
+  }
+  
+  .image-container:hover .shader-overlay {
+    opacity: 1;
+  }
+  
+  /* Additional styles for the Three.js canvas */
+  .three-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+
+  
+.animatedimage {
+    /* width: 90%;
+    height: 90%; */
+    /* margin: 0 auto; */
+    transition: transform 0.5s;
+    transform: scale(0.99);
+  }
+  .animatedimage:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 10px 33px 8px #f4f8fb;
+
+  }
+  .web1{
+    position: relative;
+  }
+  .web1 ul{
+    font-family: UniversalSans-500,Arial,sans-serif;
+    display: flex;
+    padding-left: 0px;
+    margin-left: 0px;
+    opacity: 0;
+    transition: all 0.5s ease-in;
+  }
+  .web1:hover ul{
+    opacity: 1;
+  }
+  .web1 ul li{
+
+    position: relative;
+    list-style: none outside none;
+    color: #637695;
+    padding-right: 36px;
+    /* display: inline; */
+    
+  }
+  .web1 ul li:not(:last-child):before {
+    right: 16px;
+    top: 8.5px;
+    width: 4px;
+    height: 4px;
+}
+
+.web1 ul li:not(:last-child):before {
+  content: "";
+  position: absolute;
+  right: 11px;
+  top: 8.5px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #637695;
+}
+
+.Section1{
+  position: relative;
+}
+
+

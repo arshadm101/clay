@@ -1,0 +1,27 @@
+.brands h2.accordion-header button {
+    font-size: 29px;
+    font-weight: 500;
+    font-family: 'UniversalSans-500';
+    background: transparent;
+    color: black;
+}
+
+.brands .accordion-body p {
+    font-size: 26px;
+    font-family: 'UniversalSans-500';
+    font-weight: 500;
+    font-family: UniversalSans-500,Arial,sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: -.01em;
+    /* z-index: 2; */
+    color: var(--color-shadow);
+    /* opacity: 0; */
+    transition-property: opacity;
+    transition-duration: .25s;
+    transition-timing-function: var(--easeOutExpo);
+}
+.brands button.accordion-button {
+    background: transparent !important;
+}

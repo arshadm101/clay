@@ -1,0 +1,20 @@
+.Section1{
+    padding-top: 170px;
+}
+.Heading_level_1{
+    font-size: 74px;
+    letter-spacing: -.04em;
+    font-family: UniversalSans-740-Headlines,Arial,sans-serif;
+    /* font-size: 40px; */
+    font-weight: 740;
+    line-height: 110%;
+    letter-spacing: -.03em;
+
+}
+.Heading_level_1{
+    padding-bottom: 120px;
+
+}
+/* .scrollimagecontainer{
+    height: 100vh;
+} */
