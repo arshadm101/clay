@@ -7,12 +7,12 @@ import {
     NavDropdown,
     Col,
     Row,
-  } from "react-bootstrap";
+  } from 'react-bootstrap';
 //   import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
   import { useRouter } from "next/router";
   import Link from "next/link";
-  import styles from "../styles/header.module.css";
-  import { useMemo, useState ,useEffect } from "react";
+  import styles from '../styles/header.module.css';
+  import { useMemo, useState ,useEffect } from 'react';
   import Logo from '../../public/images/logo.JPG';
 // import Banners from '@/components/Banners';
 import Offcanvas from 'react-bootstrap/Offcanvas';

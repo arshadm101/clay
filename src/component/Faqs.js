@@ -1,6 +1,7 @@
+import next from 'next';
 import Link from 'next/link'
 import Image from 'next/image'
-import { Container,Col,Row, } from "react-bootstrap";
+import { Container,Col,Row, } from 'react-bootstrap';
 // import React, { useEffect, useRef } from 'react';
 import Accordion from 'react-bootstrap/Accordion';
 import React, { useState } from 'react';

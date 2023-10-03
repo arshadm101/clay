@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import { Container,Col,Row, } from "react-bootstrap";
+import { Container,Col,Row, } from 'react-bootstrap';
 import styles from '../styles/homeSection.module.css'
 import React, { useEffect, useRef } from 'react';
 import Homebanner from 'public/images/headerbanner.webp'
