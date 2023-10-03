@@ -1,37 +1,37 @@
-import next from 'next';
+import next from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
-import { Container,Col,Row, } from 'react-bootstrap';
-// import React, { useEffect, useRef } from 'react';
-import Accordion from 'react-bootstrap/Accordion';
+import { Container,Col,Row, } from 'react-bootstrap'
+import Accordion from 'react-bootstrap/Accordion'
 import React, { useState } from 'react';
 import Styles from '../styles/BrandCollaps.module.css';
-import colappse1 from 'public/images/collaps1.webp'
-import colappse2 from 'public/images/collaps2.webp'
-import colappse3 from 'public/images/collaps3.webp'
+// import React, { useEffect, useRef } from 'react';
+// import colappse1 from 'public/images/collaps1.webp'
+// import colappse2 from 'public/images/collaps2.webp'
+// import colappse3 from 'public/images/collaps3.webp'
 
 const BrandCollaps = () => {
 
-    const [isHovered, setIsHovered] = useState(false);
-    const [isClicked, setIsClicked] = useState(false);
+    const [isHovered, setIsHovered] = useState(false)
+    const [isClicked, setIsClicked] = useState(false)
   
     const handleHover = () => {
-      setIsHovered(!isHovered);
-    };
+      setIsHovered(!isHovered)
+    }
   
     const handleClick = () => {
-      setIsClicked(!isClicked);
-    };
+      setIsClicked(!isClicked)
+    }
   
     const getImageSource = () => {
       if (isClicked) {
-        return "/public/images/collaps1.webp";
+        return '/public/images/collaps1.webp'
       } else if (isHovered) {
-        return "/public/images/collaps1.webp";
+        return '/public/images/collaps1.webp'
       } else {
-        return "/public/images/collaps1.webp";
+        return '/public/images/collaps1.webp'
       }
-    };
+    }
 
     return (
         <>
@@ -72,8 +72,7 @@ const BrandCollaps = () => {
                                             onClick={handleClick}>
                                             <Accordion.Header>Websites</Accordion.Header>
                                             <Accordion.Body>
-                                                <p>
-                                                    A modern brand is defined by its digital presence, starting with the website. We focus on creating websites that effectively convey the brand's identity and perspective for an enhanced user experience.</p>
+                                                <p>A modern brand is defined by its digital presence, starting with the website. We focus on creating websites that effectively convey the brand's identity and perspective for an enhanced user experience.</p>
                                             </Accordion.Body>
                                     </Accordion.Item>
                                     <Accordion.Item eventKey="3" onMouseEnter={handleHover}
@@ -81,8 +80,7 @@ const BrandCollaps = () => {
                                             onClick={handleClick}>
                                             <Accordion.Header>Development</Accordion.Header>
                                             <Accordion.Body>
-                                                <p>
-                                                    Our web developers are committed to achieving both visual and performance excellence. From the backend to the frontend, we prioritize delivering a seamless and enjoyable user experience on all devices.
+                                                <p>  Our web developers are committed to achieving both visual and performance excellence. From the backend to the frontend, we prioritize delivering a seamless and enjoyable user experience on all devices.
                                                 </p>
                                             </Accordion.Body>
                                     </Accordion.Item>
@@ -103,6 +101,5 @@ const BrandCollaps = () => {
                 </section>
         </>
    )
-
 }
 export default BrandCollaps

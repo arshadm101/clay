@@ -1,24 +1,23 @@
-import next from 'next';
+import next from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
-import { Container,Col,Row, } from 'react-bootstrap';
-// import React, { useEffect, useRef } from 'react';
-import Accordion from 'react-bootstrap/Accordion';
-import React, { useState } from 'react';
-import styles from '../styles/Fqas.module.css';
+import { Container,Col,Row, } from 'react-bootstrap'
+import Accordion from 'react-bootstrap/Accordion'
+import React, { useState } from 'react'
+import styles from '../styles/Fqas.module.css'
 
 
 const Faqs = () => {
   
-    const [isHovered, setIsHovered] = useState(false);
-    const [isClicked, setIsClicked] = useState(false);
+    const [isHovered, setIsHovered] = useState(false)
+    const [isClicked, setIsClicked] = useState(false)
   
     const handleHover = () => {
-      setIsHovered(!isHovered);
+      setIsHovered(!isHovered)
     };
   
     const handleClick = () => {
-      setIsClicked(!isClicked);
+      setIsClicked(!isClicked)
     };
   
     return (
@@ -38,7 +37,7 @@ const Faqs = () => {
                                         What are your core services as a UX design and branding firm?
                                     </Accordion.Header>
                                    <Accordion.Body className={styles.para}>
-                        <p>At Clay, user experience is not just a capability but the cornerstone of our approach. We first began as a UX design agency in San Francisco, focusing on mobile apps and enterprise/SaaS software.
+<p>At Clay, user experience is not just a capability but the cornerstone of our approach. We first began as a UX design agency in San Francisco, focusing on mobile apps and enterprise/SaaS software.
 <br/><br/>
 However, our passion for branding and the demand from our clients led us to expand our offering to provide full-service brand design practice and web design and development of marketing websites.
 <br/><br/>
@@ -48,7 +47,8 @@ Our team handles every aspect required to bring a digital product to life. This 
 <br/><br/>
 Furthermore, we boast an in-house content production studio that provides creative direction, 2D/3D design, illustration and iconography, motion design, animation, sound design, photo/video, and copywriting services.
 <br/><br/>
-For web projects, we integrate considerations for SEO into our process to ensure that our client's websites are optimized for search engines; however, SEO is not offered as a standalone service. </p>
+For web projects, we integrate considerations for SEO into our process to ensure that our client's websites are optimized for search engines; however, SEO is not offered as a standalone service. 
+</p>
                                     </Accordion.Body>
                                     </Accordion.Item>
                                         <Accordion.Item eventKey="1"  className={styles.accordionitemHome}>
@@ -56,7 +56,7 @@ For web projects, we integrate considerations for SEO into our process to ensure
                                             onMouseLeave={handleHover}
                                             onClick={handleClick} className={styles.accordionHeader}>What separates Clay from other branding and web design agencies?</Accordion.Header>
                                             <Accordion.Body className={styles.para}>
-                                                <p>In a saturated market of excellent UX design and branding agencies, it's challenging to stand out. At Clay, we believe our client's success is intertwined with our own. We forge enduring partnerships based on trust and mutual growth, going beyond world-class services.
+<p>In a saturated market of excellent UX design and branding agencies, it's challenging to stand out. At Clay, we believe our client's success is intertwined with our own. We forge enduring partnerships based on trust and mutual growth, going beyond world-class services.
 <br/><br/>
 When you choose us, you collaborate directly with our dedicated team, who genuinely care about your success. Our cofounders oversee every project, while a design director leads the way, ensuring thorough design reviews and involvement in project details.
 <br/><br/>
@@ -64,9 +64,10 @@ Communication and transparency drive all our interactions, guaranteeing a premiu
 <br/><br/>
 Unlike traditional design firms, we integrate branding and product expertise in one place, boasting cross-disciplinary teams for each project. This ensures your app or website represents your brand effectively while delivering an unforgettable user experience.
 <br/><br/>
-Lastly, we specialize in creating scalable designs that support your long-term business goals. Our portfolio showcases websites and products untouched for over five years, proving our future-proof capabilities.</p>
-                                            </Accordion.Body>
-                                    </Accordion.Item>
+Lastly, we specialize in creating scalable designs that support your long-term business goals. Our portfolio showcases websites and products untouched for over five years, proving our future-proof capabilities.
+</p>
+                                </Accordion.Body>
+                           </Accordion.Item>
                                     <Accordion.Item eventKey="2" onMouseEnter={handleHover}
                                             onMouseLeave={handleHover}
                                             onClick={handleClick}  className={styles.accordionitemHome}>
