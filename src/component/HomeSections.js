@@ -70,7 +70,7 @@ const HomeSections = () => {
                 <Row>
                   <Col lg={12}>
                   <div className={styles.scrollimagecontainer}>
-                    <img
+                    <Image
                       ref={imageRef}
                       src='../images/headerbanner.webp'
                       alt="Image"

@@ -38,7 +38,7 @@ const CleientsLogo = () => {
             {Array.from({ length: 5 }).map((_, index) => (
               <Col key={index}>
                 <div className={` ${Styles.logos} ${index === 0 ? Styles.fadeIn : ''}`}>
-                  <img
+                  <Image
                     src={logos[(currentLogoIndex + index) % logos.length]}
                     alt={`Random Logo ${index + 1}`}
                     className={Styles.logo}
@@ -51,7 +51,7 @@ const CleientsLogo = () => {
             {Array.from({ length: 5 }).map((_, index) => (
               <Col key={index}>
                 <div className={` ${Styles.logos} ${index === 0 ? Styles.fadeIn : ''}`}>
-                  <img
+                  <Image
                     src={logos[(currentLogoIndex + index) % logos.length]}
                     alt={`Random Logo ${index + 1}`}
                     className={Styles.logo}

@@ -40,7 +40,7 @@ const BrandCollaps = () => {
                             </Col>
                             <Col lg={2}>
                             <div>
-                                <img src={getImageSource()} alt="Image" />
+                                <Image src={getImageSource()} alt="Image" />
                             </div>
                         </Col>
                         <Col lg={4} className='brands'>

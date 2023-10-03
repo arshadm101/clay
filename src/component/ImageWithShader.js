@@ -15,7 +15,7 @@ const ImageWithShader = () => {
 
   return (
     <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-      <img
+      <Image
         src=""
         alt="Your Image"
         className={isHovered ? 'shader-hovered' : ''}
