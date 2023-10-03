@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { Container,Col,Row, } from "react-bootstrap";
 import styles from '../styles/homeSection.module.css'
 import React, { useEffect, useRef } from 'react';
-// import Homebanner from 'public/images/headerbanner.webp'
+import Homebanner from 'public/images/headerbanner.webp'
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 
@@ -70,11 +70,7 @@ const HomeSections = () => {
                 <Row>
                   <Col lg={12}>
                   <div className={styles.scrollimagecontainer}>
-                    <Image
-                      ref={imageRef}
-                      src='../images/headerbanner.webp'
-                      alt="Image"
-                      className="scroll-image"
+                    <Image ref={imageRef} src={Homebanner} alt="Image" className="scroll-image" width={1200} height={1000}
                     />
                   </div>
                   </Col>

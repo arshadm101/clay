@@ -42,6 +42,7 @@ const CleientsLogo = () => {
                     src={logos[(currentLogoIndex + index) % logos.length]}
                     alt={`Random Logo ${index + 1}`}
                     className={Styles.logo}
+                    width={200} height={100}
                   />
                 </div>
               </Col>
@@ -55,6 +56,7 @@ const CleientsLogo = () => {
                     src={logos[(currentLogoIndex + index) % logos.length]}
                     alt={`Random Logo ${index + 1}`}
                     className={Styles.logo}
+                    width={200} height={100}
                   />
                 </div>
               </Col>

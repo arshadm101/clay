@@ -5,7 +5,9 @@ import { Container,Col,Row, } from "react-bootstrap";
 import Accordion from 'react-bootstrap/Accordion';
 import React, { useState } from 'react';
 import Styles from '../styles/BrandCollaps.module.css';
-
+import colappse1 from 'public/images/collaps1.webp'
+import colappse2 from 'public/images/collaps2.webp'
+import colappse3 from 'public/images/collaps3.webp'
 
 const BrandCollaps = () => {
 
@@ -22,28 +24,28 @@ const BrandCollaps = () => {
   
     const getImageSource = () => {
       if (isClicked) {
-        return '../images/collaps1.webp';
+        return '/public/images/collaps1.webp';
       } else if (isHovered) {
-        return '../images/collaps2.webp';
+        return '/public/images/collaps1.webp';
       } else {
-        return '../images/collaps3.webp';
+        return '/public/images/collaps1.webp';
       }
     };
 
     return (
         <>
-                <section className='pt-130 pb-65'>
+                <section className="pt-130 pb-65">
                     <Container>
                         <Row>
                             <Col lg={6}>
-                                <h4 className='h4-font'>Based in San Francisco, we strengthen brands through exceptional digital experiences for companies worldwide.</h4>
+                                <h4 className="h4-font">Based in San Francisco, we strengthen brands through exceptional digital experiences for companies worldwide.</h4>
                             </Col>
                             <Col lg={2}>
                             <div>
-                                <Image src={getImageSource()} alt="Image" />
+                                <Image src={getImageSource()} alt="Image" width={400} height={400}/>
                             </div>
                         </Col>
-                        <Col lg={4} className='brands'>
+                        <Col lg={4} className="brands">
                                 <Accordion defaultActiveKey="0" flush>
                                         <Accordion.Item eventKey="0">
                                             <Accordion.Header onMouseEnter={handleHover}
