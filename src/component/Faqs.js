@@ -29,7 +29,7 @@ const Faqs = () => {
                                 <h2 className={`${styles.heading2} text-white`}>FAQS.</h2>
                         </Col>
                         <Col lg={12} className={`${styles.brands} branding`}>
-                            <Accordion defaultActiveKey="0" flush>
+                            <Accordion defaultActiveKey='0' flush>
                                 <Accordion.Item className={styles.accordionitemHome}>
                                     <Accordion.Header onMouseEnter={handleHover}
                                     onMouseLeave={handleHover}
@@ -51,7 +51,7 @@ For web projects, we integrate considerations for SEO into our process to ensure
 </p>
                                     </Accordion.Body>
                                     </Accordion.Item>
-                                        <Accordion.Item eventKey="1"  className={styles.accordionitemHome}>
+                                        <Accordion.Item eventKey='1'  className={styles.accordionitemHome}>
                                             <Accordion.Header  onMouseEnter={handleHover}
                                             onMouseLeave={handleHover}
                                             onClick={handleClick} className={styles.accordionHeader}>What separates Clay from other branding and web design agencies?</Accordion.Header>
@@ -69,7 +69,7 @@ Lastly, we specialize in creating scalable designs that support your long-term b
 </p>
                                 </Accordion.Body>
                            </Accordion.Item>
-                                    <Accordion.Item eventKey="2" onMouseEnter={handleHover}
+                                    <Accordion.Item eventKey='2' onMouseEnter={handleHover}
                                             onMouseLeave={handleHover}
                                             onClick={handleClick}  className={styles.accordionitemHome}>
                                             <Accordion.Header className={styles.accordionHeader}>
@@ -85,7 +85,7 @@ Lastly, we specialize in creating scalable designs that support your long-term b
                                                 Working with clients across diverse time zones has expanded our agencys capabilities and deepened our understanding of global markets. It has fostered an adaptive and efficient culture within our team, allowing us to consistently deliver exceptional results while respecting and embracing our clients unique needs and perspectives worldwide.                                      </p>
                                         </Accordion.Body>
                                     </Accordion.Item>
-                                    <Accordion.Item eventKey="3" onMouseEnter={handleHover}
+                                    <Accordion.Item eventKey='3' onMouseEnter={handleHover}
                                             onMouseLeave={handleHover}
                                             onClick={handleClick}  className={styles.accordionitemHome}>
                                     <Accordion.Header className={styles.accordionHeader}>How much does hiring you for a design project cost?</Accordion.Header>
@@ -97,7 +97,7 @@ Lastly, we specialize in creating scalable designs that support your long-term b
                                                 <p>We aim to deliver the best possible solutions to our partners, tailored to their specific requirements. Whether it entails a comprehensive range of services or a customized approach that aligns with their financial constraints, we strive to meet their unique needs.</p>
                                             </Accordion.Body>
                                         </Accordion.Item>
-                                    <Accordion.Item eventKey="4" onMouseEnter={handleHover}
+                                    <Accordion.Item eventKey='4' onMouseEnter={handleHover}
                                             onMouseLeave={handleHover}
                                             onClick={handleClick}  className={styles.accordionitemHome}>
                                     <Accordion.Header className={styles.accordionHeader}>Do you work with startups?</Accordion.Header>
@@ -110,7 +110,7 @@ Lastly, we specialize in creating scalable designs that support your long-term b
                                         </Accordion.Body>
                                     </Accordion.Item>
 
-                                    <Accordion.Item eventKey="5" onMouseEnter={handleHover}
+                                    <Accordion.Item eventKey='5' onMouseEnter={handleHover}
                                             onMouseLeave={handleHover}
                                             onClick={handleClick}  className={styles.accordionitemHome}>
                                     <Accordion.Header className={styles.accordionHeader}>Can you help us redesign our B2B/enterprise software?</Accordion.Header>

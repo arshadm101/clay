@@ -35,20 +35,20 @@ const BrandCollaps = () => {
 
     return (
         <>
-                <section className="pt-130 pb-65">
+                <section className='pt-130 pb-65'>
                     <Container>
                         <Row>
                             <Col lg={6}>
-                                <h4 className="h4-font">Based in San Francisco, we strengthen brands through exceptional digital experiences for companies worldwide.</h4>
+                                <h4 className='h4-font'>Based in San Francisco, we strengthen brands through exceptional digital experiences for companies worldwide.</h4>
                             </Col>
                             <Col lg={2}>
                                 <div>
-                                    <Image src={getImageSource()} alt="Image" width={400} height={400}/>
+                                    <Image src={getImageSource()} alt='Image' width={400} height={400}/>
                                 </div>
                             </Col>
-                            <Col lg={4} className="brands">
-                                <Accordion defaultActiveKey="0" flush>
-                                    <Accordion.Item eventKey="0">
+                            <Col lg={4} className='brands'>
+                                <Accordion defaultActiveKey='0' flush>
+                                    <Accordion.Item eventKey='0'>
                                             <Accordion.Header onMouseEnter={handleHover}
                                             onMouseLeave={handleHover}
                                             onClick={handleClick}>Branding</Accordion.Header>
@@ -57,7 +57,7 @@ const BrandCollaps = () => {
                                                     A brand is more than just a logo and color palette. We will craft a distinct visual and verbal identity, create necessary assets, and establish clear brand guidelines to maintain consistency across all touchpoints. </p>
                                             </Accordion.Body>
                                     </Accordion.Item>
-                                    <Accordion.Item eventKey="1">
+                                    <Accordion.Item eventKey='1'>
                                             <Accordion.Header  onMouseEnter={handleHover}
                                             onMouseLeave={handleHover}
                                             onClick={handleClick}>Digital Products</Accordion.Header>
@@ -66,7 +66,7 @@ const BrandCollaps = () => {
                                                     Clay concentrates on designing authentic connections through the use of both aesthetics and behavioral science. Our team of senior UI/UX designers delivers engaging digital products that help brands thrive in the modern economy.</p>
                                             </Accordion.Body>
                                     </Accordion.Item>
-                                    <Accordion.Item eventKey="2" onMouseEnter={handleHover}
+                                    <Accordion.Item eventKey='2' onMouseEnter={handleHover}
                                             onMouseLeave={handleHover}
                                             onClick={handleClick}>
                                             <Accordion.Header>Websites</Accordion.Header>
@@ -74,7 +74,7 @@ const BrandCollaps = () => {
                                                 <p>A modern brand is defined by its digital presence, starting with the website. We focus on creating websites that effectively convey the brands identity and perspective for an enhanced user experience.</p>
                                             </Accordion.Body>
                                     </Accordion.Item>
-                                    <Accordion.Item eventKey="3" onMouseEnter={handleHover}
+                                    <Accordion.Item eventKey='3' onMouseEnter={handleHover}
                                             onMouseLeave={handleHover}
                                             onClick={handleClick}>
                                             <Accordion.Header>Development</Accordion.Header>
@@ -83,7 +83,7 @@ const BrandCollaps = () => {
                                                 </p>
                                             </Accordion.Body>
                                     </Accordion.Item>
-                                    <Accordion.Item eventKey="4" onMouseEnter={handleHover}
+                                    <Accordion.Item eventKey='4' onMouseEnter={handleHover}
                                                 onMouseLeave={handleHover}
                                                 onClick={handleClick}>
                                             <Accordion.Header>Content</Accordion.Header>
