@@ -4,7 +4,7 @@ import { getStaticPaths } from 'next';
 import { Container, Col, Row } from 'react-bootstrap';
 import { gsap } from 'gsap';
 import styles from '../styles/testimonial.module.css';
-import { useState } from 'react';
+import React, { useState } from 'react';
 
 const slideData = [
     {
