@@ -23,28 +23,28 @@ const CleientsLogo = () => {
             <Container className='pb-130'>
               <Row>
                 <Col lg={7}>
-                    <h1 className={styles.Heading_level_1}>Let’s Talk</h1>
-                    <p className={styles.para}>We'd love to learn more about you and <br/> what we can design and build together.</p>
+                    <h1 className={styles.Heading_level_1}>Lets Talk</h1>
+                    <p className={styles.para}>We would love to learn more about you and <br/> what we can design and build together.</p>
                     <Row>
                       <Col lg={6}>
-                            <div className='pt-5'>
+                            <div className="pt-5">
                                 <h4 className={styles.titlePara}>Become a Client</h4>
-                                <Link href='mailto:hey@clay.global' className={styles.links}>
+                                <Link href="mailto:hey@clay.global" className={styles.links}>
                                     <span>hey@clay.global </span>
                                     <span className={styles.bottom_border}></span>
                                  </Link> 
                             </div>
-                       <div className='pt-5'>
-                      <Link href='https://g.page/clayglobal?share' className={`${styles.links} mt-5`}>
+                       <div className="pt-5">
+                      <Link href="https://g.page/clayglobal?share" className={`${styles.links} mt-5`}>
                           <span className={styles.fonts20}>300 Broadway, San Francisco, CA 94133 </span>
                           <span className={styles.bottom_border}></span>
                         </Link> 
                     </div>
                       </Col>  
                       <Col lg={6}>
-                        <div className='pt-5'>
+                        <div className="pt-5">
                             <h4 className={styles.titlePara}>Become a Client</h4>
-                            <Link href='mailto:hey@clay.global' className={styles.links}>
+                            <Link href="mailto:hey@clay.global" className={styles.links}>
                                 <span>hey@clay.global </span>
                                 <span className={styles.bottom_border}></span>
                              </Link> 
@@ -52,19 +52,19 @@ const CleientsLogo = () => {
                         <div className={styles.pt50}>
                           <ul className={styles.navlinksfooter}>
                             <li>
-                              <Link href='/privacy/' className={`${styles.links} mt-5`}>
+                              <Link href="/privacy/" className={`${styles.links} mt-5`}>
                                 <span className={`${styles.fonts20} ${styles.colors}  mt-5`}>Privacy </span>
                                 <span className={styles.bottom_border}></span>
                               </Link> 
                             </li>
-                            <li className='px-4'>
-                              <Link href='/terms/' className={`${styles.links}  mt-5`}>
+                            <li className="px-4">
+                              <Link href="/terms/" className={`${styles.links}  mt-5`}>
                                 <span className={`${styles.fonts20} ${styles.colors}  mt-5`}>Terms </span>
                                 <span className={styles.bottom_border}></span>
                               </Link> 
                             </li>
                             <li className=''>
-                            <Link href='/sitemap/' className={`${styles.links}  mt-5`}>
+                            <Link href="/sitemap/" className={`${styles.links}  mt-5`}>
                                 <span className={`${styles.fonts20} ${styles.colors}  mt-5`}>Sitemap </span>
                                 <span className={styles.bottom_border}></span>
                               </Link> 
@@ -78,32 +78,32 @@ const CleientsLogo = () => {
                         <div className='pt-5'>
                       <ul className={styles.social}>
                         <li>
-                            <Link href='/'>
+                            <Link href="/">
                               <Image src={dribble} height={24} width={24} alt="slide"  />
                             </Link>
                         </li>
                         <li>
-                            <Link href='/'>
+                            <Link href="/">
                               <Image src={behance} height={24} width={24} alt="slide"/>
                             </Link>
                         </li>
                         <li>
-                            <Link href='/'>
+                            <Link href="/">
                               <Image src={instagram} height={24} width={24} alt="slide"/>
                             </Link>
                         </li>
                         <li>
-                           <Link href='/'>
+                           <Link href="/">
                               <Image src={linkedin} height={24} width={24} alt="slide"/>
                             </Link>
                         </li>
                         <li>
-                           <Link href='/'>
+                           <Link href="/">
                               <Image src={twitter} height={24} width={24} alt="slide"/>
                             </Link>
                         </li>
                         <li>
-                           <Link href='/'>
+                           <Link href="/">
                               <Image src={facebook} height={24} width={24} alt="slide"/>
                             </Link>
                         </li>

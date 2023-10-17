@@ -6,8 +6,6 @@ import React, { useState } from 'react';
 import { gsap } from 'gsap';
 import styles from '../styles/testimonial.module.css';
 
-// Import Swiper styles
-
 
 const slideData = [
     {
@@ -44,10 +42,7 @@ designation: 'Co-Founder, Ookla',
   ];
 
 const testimonial = () => {
-    
-
   const [activeSlide, setActiveSlide] = useState(0);
- 
   const handleSlideChange = (direction) => {
     const newSlide =
       direction === 'next'
@@ -76,7 +71,7 @@ const testimonial = () => {
 
 return (
       <>
-        <section className='pb-130 pt-130'>
+        <section className="pb-130 pt-130">
             <Container>
                 <div>
                 <Row>
@@ -93,7 +88,7 @@ return (
                     </Col>
                     <Col lg={1}></Col>
                     <Col lg={2}>
-                        <div className='d-flex justify-content-around pt-5'>
+                        <div className="d-flex justify-content-around pt-5">
                            <div href="#" className={styles.black} onClick={() => handleSlideChange('prev')}>
                             <span><svg width="2.1em" height="1.6em" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.322 7.926 9.91 2.179 8.437.664.335 8.997l8.102 8.334 1.473-1.515-5.588-5.747h19.346V7.926H4.322Z" fill="currentColor"></path></svg></span>
                             </div>

@@ -4,31 +4,19 @@ import styles from '../styles/ImageHover.module.css';
 import { Container, Col, Row } from 'react-bootstrap';
 import Link from 'next/link';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
-import Image from 'next/image'
-import marta from '/public/images/marqeta.webp'
+import Image from 'next/image';
+import marta from '/public/images/marqeta.webp';
+
 const ImageHover = () => {
   const cursorRef = useRef(null);
   const imageRefs = useRef([]);
 
   useEffect(() => {
 
-      // const tl = gsap.timeline({
-      //   scrollTrigger: {
-      //     trigger: '.animation-container',
-      //     start: 'top bottom',
-      //     end: 'bottom bottom',
-      //     scrub: true,
-      //   },
-      // });
-  
-      // tl.from('.elemt1', { y: -100, opacity: 0, duration: 1 });
-      // tl.from('.elemt2', { y: 100, opacity: 0, duration: 1 }, '-=0.5');
-
     const cursor = cursorRef.current;
     const links = document.querySelectorAll('.hover-link');
     const scrolltxt = document.querySelectorAll('.scrolltxt');
 
-   
     if (!cursor) {
       return;
     }
@@ -75,13 +63,13 @@ const ImageHover = () => {
 
   return (
     <>
-      <Container >
-        <Row className='pt-130 pb-65 text-container'>
+      <Container>
+        <Row className="pt-130 pb-65 text-container">
           <Col lg={6} >
             
             <div>
             <h2 className={styles.Heading_level_1}>Clients</h2>
-            <p className={styles.para}>We've partnered with forward-thinking companies, from innovative startups to Fortune 100 corporations.</p>
+            <p className={styles.para}>We have partnered with forward-thinking companies, from innovative startups to Fortune 100 corporations.</p>
             </div>
 
           </Col>
@@ -129,7 +117,7 @@ const ImageHover = () => {
               <div className={styles.linkover}>
                 <h4 className={styles.linkTitle}>Snapchat
 </h4>
-                <p className={styles.linkPara}>UX design for Snapchat's augmented reality shopping experience.
+                <p className={styles.linkPara}>UX design for Snapchats augmented reality shopping experience.
 
 </p>
               </div>
@@ -146,7 +134,6 @@ const ImageHover = () => {
                 <h4 className={styles.linkTitle}>Credit Karma
 </h4>
                 <p className={styles.linkPara}>Digital product design partnership on building new enterprise tools.
-
 </p>
               </div>
               <div>
@@ -159,9 +146,8 @@ const ImageHover = () => {
           
             <Link href="#" className="hover-link text">
               <div className={styles.linkover}>
-                <h4 className={styles.linkTitle}>Discover
-</h4>
-                <p className={styles.linkPara}>Iterative UX and UI design for Discover's mobile apps.
+                <h4 className={styles.linkTitle}>Discover</h4>
+                <p className={styles.linkPara}>Iterative UX and UI design for Discovers mobile apps.
 
 </p>
               </div>
@@ -229,23 +215,17 @@ const ImageHover = () => {
         
           </Col>
           <Col lg={4}>
-          
             <Link href="#" className="hover-link text">
               <div className={styles.linkover}>
                 <h4 className={styles.linkTitle}>Cisco</h4>
-                <p className={styles.linkPara}>Web design, content, and development for Meraki Go.
-
-
-</p>
+                <p className={styles.linkPara}>Web design, content, and development for Meraki Go.</p>
               </div>
               <div>
                 <Image src={marta} alt="Image 1"  width={600} height={600}   ref={(el) => (imageRefs.current[10] = el)} className="hover-image" />
               </div>
             </Link>
-        
           </Col>
           <Col lg={4}>
-            
             <Link href="#" className="hover-link text">
               <div className={styles.linkover}>
                 <h4 className={styles.linkTitle}>Marqeta</h4>
@@ -256,10 +236,8 @@ const ImageHover = () => {
                 <Image src={marta} alt="Image 1"  width={600} height={600}   ref={(el) => (imageRefs.current[11] = el)} className="hover-image" />
               </div>
             </Link>
-        
           </Col>
           <Col lg={4}>
-          
             <Link href="#" className="hover-link text">
               <div className={styles.linkover}>
                 <h4 className={styles.linkTitle}>Coca-Cola</h4>
@@ -269,10 +247,8 @@ const ImageHover = () => {
                 <Image src={marta} alt="Image 1"  width={600} height={600}   ref={(el) => (imageRefs.current[12] = el)} className="hover-image" />
               </div>
             </Link>
-        
           </Col>
           <Col lg={4}>
-          
             <Link href="#" className="hover-link text">
               <div className={styles.linkover}>
                 <h4 className={styles.linkTitle}>Fossil</h4>
@@ -282,10 +258,8 @@ const ImageHover = () => {
                 <Image src={marta} alt="Image 1"  width={600} height={600}  ref={(el) => (imageRefs.current[13] = el)} className="hover-image" />
               </div>
             </Link>
-        
           </Col>
           <Col lg={4}>
-          
             <Link href="#" className="hover-link text">
               <div className={styles.linkover}>
                 <h4 className={styles.linkTitle}>Zenefits</h4>
@@ -295,10 +269,8 @@ const ImageHover = () => {
                 <Image src={marta} alt="Image 1"  width={600} height={600}  ref={(el) => (imageRefs.current[14] = el)} className="hover-image" />
               </div>
             </Link>
-        
           </Col>
           <Col lg={4}>
-          
             <Link href="#" className="hover-link text">
               <div className={styles.linkover}>
                 <h4 className={styles.linkTitle}>STC Bank
@@ -309,10 +281,8 @@ const ImageHover = () => {
                 <Image src={marta} alt="Image 1"  width={600} height={600}   ref={(el) => (imageRefs.current[15] = el)} className="hover-image" />
               </div>
             </Link>
-        
           </Col>
           <Col lg={4}>
-          
             <Link href="#" className="hover-link text">
               <div className={styles.linkover}>
                 <h4 className={styles.linkTitle}>Impossible</h4>
@@ -322,10 +292,8 @@ const ImageHover = () => {
                 <Image src={marta} alt="Image 1"  width={600} height={600}   ref={(el) => (imageRefs.current[16] = el)} className="hover-image" />
               </div>
             </Link>
-        
           </Col>
           <Col lg={4}>
-          
             <Link href="#" className="hover-link text">
               <div className={styles.linkover}>
                 <h4 className={styles.linkTitle}>AppDynamics</h4>
@@ -335,7 +303,6 @@ const ImageHover = () => {
                 <Image src={marta} alt="Image 1"  width={600} height={600}  ref={(el) => (imageRefs.current[17] = el)} className="hover-image" />
               </div>
             </Link>
-        
           </Col>
           <Col lg={4}>
           
@@ -348,10 +315,8 @@ const ImageHover = () => {
                 <Image src={marta} alt="Image 1"  width={600} height={600}  ref={(el) => (imageRefs.current[18] = el)} className="hover-image" />
               </div>
             </Link>
-        
           </Col>
           <Col lg={4}>
-          
             <Link href="#" className="hover-link text">
               <div className={styles.linkover}>
                 <h4 className={styles.linkTitle}>T-Mobile</h4>
@@ -361,10 +326,8 @@ const ImageHover = () => {
                 <Image src={marta} alt="Image 1"  width={600} height={600}  ref={(el) => (imageRefs.current[19] = el)} className="hover-image" />
               </div>
             </Link>
-        
           </Col>
           <Col lg={4}>
-          
             <Link href="#" className="hover-link text">
               <div className={styles.linkover}>
                 <h4 className={styles.linkTitle}>VMware</h4>
@@ -374,7 +337,6 @@ const ImageHover = () => {
                 <Image src={marta} alt="Image 1"  width={600} height={600}  ref={(el) => (imageRefs.current[20] = el)} className="hover-image" />
               </div>
             </Link>
-        
           </Col>
           <Col lg={4}>
           
