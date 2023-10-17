@@ -3,7 +3,7 @@ import { gsap } from 'gsap';
 import styles from '../styles/ImageHover.module.css';
 import { Container, Col, Row } from 'react-bootstrap';
 import Link from 'next/link';
-import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+// import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import Image from 'next/image';
 import marta from '/public/images/marqeta.webp';
 
@@ -14,8 +14,8 @@ const ImageHover = () => {
   useEffect(() => {
 
     const cursor = cursorRef.current;
-    const links = document.querySelectorAll('.hover-link');
-    const scrolltxt = document.querySelectorAll('.scrolltxt');
+    const links = document.querySelectorAll(".hover-link");
+    const scrolltxt = document.querySelectorAll(".scrolltxt");
 
     if (!cursor) {
       return;
@@ -24,7 +24,7 @@ const ImageHover = () => {
     links.forEach((link, index) => {
       const image = imageRefs.current[index];
 
-      link.addEventListener('mousemove', (e) => {
+      link.addEventListener("mousemove", (e) => {
         const rect = link.getBoundingClientRect();
         const offsetX = e.clientX - rect.left;
         const offsetY = e.clientY - rect.top;
@@ -33,8 +33,8 @@ const ImageHover = () => {
           x: offsetX,
           y: offsetY,
           duration: 0.2,
-          transformOrigin: 'center center',
-          ease: 'power2.out',
+          transformOrigin: "center center",
+          ease: "power2.out",
         });
 
         cursor?.style && gsap.to(cursor, {
@@ -43,7 +43,7 @@ const ImageHover = () => {
           duration: 0.2,
         });
       });
-      link.addEventListener('mouseleave', () => {
+      link.addEventListener("mouseleave", () => {
         gsap.to(image, {
           x: 0,
           y: 0,
@@ -297,7 +297,7 @@ const ImageHover = () => {
             <Link href="#" className="hover-link text">
               <div className={styles.linkover}>
                 <h4 className={styles.linkTitle}>AppDynamics</h4>
-      <p className={styles.linkPara}>Web design and guidelines for Cisco's business observability software.</p>
+      <p className={styles.linkPara}>Web design and guidelines for Ciscos business observability software.</p>
               </div>
               <div>
                 <Image src={marta} alt="Image 1"  width={600} height={600}  ref={(el) => (imageRefs.current[17] = el)} className="hover-image" />
@@ -369,7 +369,7 @@ const ImageHover = () => {
             <Link href="#" className="hover-link text">
               <div className={styles.linkover}>
                 <h4 className={styles.linkTitle}>MEXC</h4>
-          <p className={styles.linkPara}>Brand design and guidelines for Asia's leading crypto exchange.
+          <p className={styles.linkPara}>Brand design and guidelines for Asias leading crypto exchange.
 </p>
               </div>
               <div>

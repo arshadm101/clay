@@ -2,10 +2,9 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { getStaticPaths } from 'next';
 import { Container, Col, Row } from 'react-bootstrap';
-import React, { useState } from 'react';
 import { gsap } from 'gsap';
 import styles from '../styles/testimonial.module.css';
-
+import { useState } from 'react';
 
 const slideData = [
     {
