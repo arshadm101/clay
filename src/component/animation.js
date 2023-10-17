@@ -1,12 +1,13 @@
-
-// import React, { useEffect, useRef,useState } from 'react';
+import React from 'react'; // Import React once
+import { useEffect } from 'react'; // Other imports can follow
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
 
 gsap.registerPlugin(ScrollTrigger);
 const animation = ({ children }) => {
   useEffect(() => {
-    
+
     gsap.from(children, {
       y: 100,
       opacity: 0, 
