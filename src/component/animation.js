@@ -6,6 +6,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 const animation = ({ children }) => {
   useEffect(() => {
+    
     gsap.from(children, {
       y: 100,
       opacity: 0, 
