@@ -15,13 +15,8 @@ import fWD from 'public/images/fwa.svg'
 gsap.registerPlugin(ScrollTrigger);
 
 const Awards = () => {
-  
   const paraTitleRefs = useRef([]);
-
     useEffect(() => {
-
-
-
       
         paraTitleRefs.current.forEach((el, i) => {
           const tl = gsap.timeline({ paused: true });
@@ -77,14 +72,10 @@ const Awards = () => {
             
           });
         });
-
-
-        
       }, []);
 
   return (
     <>  
-    
       <section className={`${styles.Industry} pb-130 position-relative`} >
         <Container className='pt-130'>
           <Row  className='pt-5 pb-5'>
@@ -170,14 +161,7 @@ Ad Highlights
                 </div>
               </div>
             </Col>
-
-            {/* {imageSources.map((src, index) => (
-              <Col key={index} xs={6} md={2}>
-                <Image src={src} alt={`img${index + 1}`}   width={200} height={100}/>
-              </Col>
-            ))}       */}
           </Row>
-       
         </Container>
       </section>
     </>
