@@ -4,7 +4,8 @@ import { getStaticPaths } from 'next';
 import { Container, Col, Row } from 'react-bootstrap';
 import React, { useState } from 'react';
 import { gsap } from 'gsap';
-import styles from '../styles/testimonial.module.css'
+import styles from '../styles/testimonial.module.css';
+
 // Import Swiper styles
 
 
@@ -39,7 +40,7 @@ text:
 name: 'Mike Kane',
 designation: 'Co-Founder, Ookla',
 },
-    // Add more slide data as needed
+
   ];
 
 const testimonial = () => {
@@ -52,26 +53,21 @@ const testimonial = () => {
       direction === 'next'
         ? (activeSlide + 1) % slideData.length : (activeSlide - 1 + slideData.length) % slideData.length;
 
-    // Calculate slide positions based on the direction
+
     const currentSlidePosition = direction === 'next' ? '-100%' : '100%';
     const newSlidePosition = '0';
 
-    // Animate the slides using GSAP
     gsap.fromTo(
       `.${styles.sliderHeading}`,
       {
-        x: currentSlidePosition, // Slide out to the left or right
+        x: currentSlidePosition,
         opacity: 0, 
-        // Ensure the opacity is 1 before starting the animation
       },
       {
-        x: newSlidePosition, // Slide in from the left or right
-        opacity: 1, // Maintain opacity
+        x: newSlidePosition, 
+        opacity: 1, 
         duration: 0.5,
-
-        // Animation duration
         onComplete: () => {
-          // Animation complete callback
           setActiveSlide(newSlide);
         },
       }

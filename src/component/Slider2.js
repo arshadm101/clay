@@ -56,31 +56,31 @@ const Slider2 = () => {
                 <div className="swiper-wrapper">
                 {/* Add your slider content here */}
                 <div className="swiper-slide">
-                    <Image src={img1} width={400} height={400}/>
+                    <Image src={img1} width={400} height={400} alt="slide"/>
                 </div>
                 <div className="swiper-slide">
-                    <Image src={img2} width={400} height={400}/>
+                    <Image src={img2} width={400} height={400} alt="slide"/>
                 </div>
                 <div className="swiper-slide">
-                    <Image src={img3} width={400} height={400}/>
+                    <Image src={img3} width={400} height={400} alt="slide"/>
                 </div>
                 <div className="swiper-slide">
-                    <Image src={img4} width={400} height={400}/>
+                    <Image src={img4} width={400} height={400} alt="slide"/>
                 </div>
                 <div className="swiper-slide">
-                    <Image src={img5} width={400} height={400}/>
+                    <Image src={img5} width={400} height={400} alt="slide"/>
                 </div>
                 <div className="swiper-slide">
-                    <Image src={img6} width={400} height={400}/>
+                    <Image src={img6} width={400} height={400} alt="slide"/>
                 </div>
                 <div className="swiper-slide">
-                    <Image src={img7} width={400} height={400}/>
+                    <Image src={img7} width={400} height={400} alt="slide"/>
                 </div>
                 <div className="swiper-slide">
-                    <Image src={img8} width={400} height={400}/>
+                    <Image src={img8} width={400} height={400} alt="slide"/>
                 </div>
                 <div className="swiper-slide">
-                    <Image src={img9} width={400} height={400}/>
+                    <Image src={img9} width={400} height={400} alt="slide"/>
                 </div>
                 </div>
                 <div className="swiper-button-next"></div>

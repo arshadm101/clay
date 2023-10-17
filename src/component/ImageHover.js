@@ -4,7 +4,8 @@ import styles from '../styles/ImageHover.module.css';
 import { Container, Col, Row } from 'react-bootstrap';
 import Link from 'next/link';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
-
+import Image from 'next/image'
+import marta from '/public/images/marqeta.webp'
 const ImageHover = () => {
   const cursorRef = useRef(null);
   const imageRefs = useRef([]);
@@ -94,7 +95,7 @@ const ImageHover = () => {
                 <p className={styles.linkPara}>Strategy, web design, and development for Facebook’s new internet technology.</p>
               </div>
               <div>
-                <img src="../images/marqeta.webp" alt="Image 1" ref={(el) => (imageRefs.current[0] = el)} className="hover-image" />
+                <Image src={marta} alt="Image 1"  width={600} height={600} ref={(el) => (imageRefs.current[0] = el)} className="hover-image" />
               </div>
             </Link>
           </Col>
@@ -105,7 +106,7 @@ const ImageHover = () => {
                 <p className={styles.linkPara}>User experience and interaction design for Project Jacquard.</p>
               </div>
               <div>
-                <img src="../images/marqeta.webp" alt="Image 1" ref={(el) => (imageRefs.current[1] = el)} className="hover-image" />
+                <Image src={marta} alt="Image 1"  width={600} height={600}  ref={(el) => (imageRefs.current[1] = el)} className="hover-image" />
               </div>
             </Link>
           </Col>
@@ -117,7 +118,7 @@ const ImageHover = () => {
                 <p className={styles.linkPara}>Web design and development partnership with Slack’s marketing team.</p>
               </div>
               <div>
-                <img src="../images/marqeta.webp" alt="Image 1" ref={(el) => (imageRefs.current[2] = el)} className="hover-image" />
+                <Image src={marta} alt="Image 1"  width={600} height={600}  ref={(el) => (imageRefs.current[2] = el)} className="hover-image" />
               </div>
             </Link>
       
@@ -133,7 +134,7 @@ const ImageHover = () => {
 </p>
               </div>
               <div>
-                <img src="../images/marqeta.webp" alt="Image 1" ref={(el) => (imageRefs.current[3] = el)} className="hover-image" />
+                <Image src={marta} alt="Image 1"  width={600} height={600}  ref={(el) => (imageRefs.current[3] = el)} className="hover-image" />
               </div>
             </Link>
         
@@ -149,7 +150,7 @@ const ImageHover = () => {
 </p>
               </div>
               <div>
-                <img src="../images/marqeta.webp" alt="Image 1" ref={(el) => (imageRefs.current[4] = el)} className="hover-image" />
+                <Image src={marta} alt="Image 1"  width={600} height={600}  ref={(el) => (imageRefs.current[4] = el)} className="hover-image" />
               </div>
             </Link>
         
@@ -165,7 +166,7 @@ const ImageHover = () => {
 </p>
               </div>
               <div>
-                <img src="../images/marqeta.webp" alt="Image 1" ref={(el) => (imageRefs.current[5] = el)} className="hover-image" />
+                <Image src={marta} alt="Image 1"  width={600} height={600}  ref={(el) => (imageRefs.current[5] = el)} className="hover-image" />
               </div>
             </Link>
       
@@ -177,8 +178,8 @@ const ImageHover = () => {
                 <h4 className={styles.linkTitle}>Coinbase</h4>
               <p className={styles.linkPara}>Mobile UX and UI design for a top digital currency platform.</p>
               </div>
-              <div>
-                <img src="../images/marqeta.webp" alt="Image 1" ref={(el) => (imageRefs.current[6] = el)} className="hover-image" />
+              <div> 
+                <Image src={marta} alt="Image 1"  width={600} height={600}  ref={(el) => (imageRefs.current[6] = el)} className="hover-image" />
               </div>
             </Link>
         
@@ -194,7 +195,7 @@ const ImageHover = () => {
 </p>
               </div>
               <div>
-                <img src="../images/marqeta.webp" alt="Image 1" ref={(el) => (imageRefs.current[7] = el)} className="hover-image" />
+                <Image src={marta} alt="Image 1"  width={600} height={600}   ref={(el) => (imageRefs.current[7] = el)} className="hover-image" />
               </div>
             </Link>
         
@@ -207,7 +208,7 @@ const ImageHover = () => {
             <p className={styles.linkPara}>Marketing web design collaboration with Stripe’s internal teams.</p>
               </div>
               <div>
-                <img src="../images/marqeta.webp" alt="Image 1" ref={(el) => (imageRefs.current[8] = el)} className="hover-image" />
+                <Image src={marta} alt="Image 1"  width={600} height={600}  ref={(el) => (imageRefs.current[8] = el)} className="hover-image" />
               </div>
             </Link>
         
@@ -222,7 +223,7 @@ const ImageHover = () => {
 </p>
               </div>
               <div>
-                <img src="../images/marqeta.webp" alt="Image 1" ref={(el) => (imageRefs.current[9] = el)} className="hover-image" />
+                <Image src={marta} alt="Image 1"  width={600} height={600}  ref={(el) => (imageRefs.current[9] = el)} className="hover-image" />
               </div>
             </Link>
         
@@ -238,7 +239,7 @@ const ImageHover = () => {
 </p>
               </div>
               <div>
-                <img src="../images/marqeta.webp" alt="Image 1" ref={(el) => (imageRefs.current[10] = el)} className="hover-image" />
+                <Image src={marta} alt="Image 1"  width={600} height={600}   ref={(el) => (imageRefs.current[10] = el)} className="hover-image" />
               </div>
             </Link>
         
@@ -252,7 +253,7 @@ const ImageHover = () => {
 </p>
               </div>
               <div>
-                <img src="../images/marqeta.webp" alt="Image 1" ref={(el) => (imageRefs.current[11] = el)} className="hover-image" />
+                <Image src={marta} alt="Image 1"  width={600} height={600}   ref={(el) => (imageRefs.current[11] = el)} className="hover-image" />
               </div>
             </Link>
         
@@ -265,7 +266,7 @@ const ImageHover = () => {
                 <p className={styles.linkPara}>UI/UX design and branding for a customer loyality app by Coca-Cola Mexico.</p>
               </div>
               <div>
-                <img src="../images/marqeta.webp" alt="Image 1" ref={(el) => (imageRefs.current[12] = el)} className="hover-image" />
+                <Image src={marta} alt="Image 1"  width={600} height={600}   ref={(el) => (imageRefs.current[12] = el)} className="hover-image" />
               </div>
             </Link>
         
@@ -278,7 +279,7 @@ const ImageHover = () => {
                 <p className={styles.linkPara}>Mobile app design and design guidelines for a new generation smart watch.</p>
               </div>
               <div>
-                <img src="../images/marqeta.webp" alt="Image 1" ref={(el) => (imageRefs.current[13] = el)} className="hover-image" />
+                <Image src={marta} alt="Image 1"  width={600} height={600}  ref={(el) => (imageRefs.current[13] = el)} className="hover-image" />
               </div>
             </Link>
         
@@ -291,7 +292,7 @@ const ImageHover = () => {
           <p className={styles.linkPara}>Marketing websites and UX design for an HCM software platform.</p>
               </div>
               <div>
-                <img src="../images/marqeta.webp" alt="Image 1" ref={(el) => (imageRefs.current[14] = el)} className="hover-image" />
+                <Image src={marta} alt="Image 1"  width={600} height={600}  ref={(el) => (imageRefs.current[14] = el)} className="hover-image" />
               </div>
             </Link>
         
@@ -305,7 +306,7 @@ const ImageHover = () => {
           <p className={styles.linkPara}>Designing a consumer and business app and website ecosystem for the largest digital bank in Saudi Arabia.</p>
               </div>
               <div>
-                <img src="../images/marqeta.webp" alt="Image 1" ref={(el) => (imageRefs.current[15] = el)} className="hover-image" />
+                <Image src={marta} alt="Image 1"  width={600} height={600}   ref={(el) => (imageRefs.current[15] = el)} className="hover-image" />
               </div>
             </Link>
         
@@ -318,7 +319,7 @@ const ImageHover = () => {
        <p className={styles.linkPara}>Supporting a plant-based meat brand with their Earth Day campaign.</p>
               </div>
               <div>
-                <img src="../images/marqeta.webp" alt="Image 1" ref={(el) => (imageRefs.current[16] = el)} className="hover-image" />
+                <Image src={marta} alt="Image 1"  width={600} height={600}   ref={(el) => (imageRefs.current[16] = el)} className="hover-image" />
               </div>
             </Link>
         
@@ -331,7 +332,7 @@ const ImageHover = () => {
       <p className={styles.linkPara}>Web design and guidelines for Cisco's business observability software.</p>
               </div>
               <div>
-                <img src="../images/marqeta.webp" alt="Image 1" ref={(el) => (imageRefs.current[17] = el)} className="hover-image" />
+                <Image src={marta} alt="Image 1"  width={600} height={600}  ref={(el) => (imageRefs.current[17] = el)} className="hover-image" />
               </div>
             </Link>
         
@@ -344,7 +345,7 @@ const ImageHover = () => {
           <p className={styles.linkPara}>Android app design and development for Sony Xperia.</p>
               </div>
               <div>
-                <img src="../images/marqeta.webp" alt="Image 1" ref={(el) => (imageRefs.current[18] = el)} className="hover-image" />
+                <Image src={marta} alt="Image 1"  width={600} height={600}  ref={(el) => (imageRefs.current[18] = el)} className="hover-image" />
               </div>
             </Link>
         
@@ -357,7 +358,7 @@ const ImageHover = () => {
           <p className={styles.linkPara}>UX and visual design for T‑Mobile’s customer mobile apps.</p>
               </div>
               <div>
-                <img src="../images/marqeta.webp" alt="Image 1" ref={(el) => (imageRefs.current[19] = el)} className="hover-image" />
+                <Image src={marta} alt="Image 1"  width={600} height={600}  ref={(el) => (imageRefs.current[19] = el)} className="hover-image" />
               </div>
             </Link>
         
@@ -370,7 +371,7 @@ const ImageHover = () => {
       <p className={styles.linkPara}>Visual design exploration for Clarity, an open-source design system.</p>
               </div>
               <div>
-                <img src="../images/marqeta.webp" alt="Image 1" ref={(el) => (imageRefs.current[20] = el)} className="hover-image" />
+                <Image src={marta} alt="Image 1"  width={600} height={600}  ref={(el) => (imageRefs.current[20] = el)} className="hover-image" />
               </div>
             </Link>
         
@@ -383,7 +384,7 @@ const ImageHover = () => {
           <p className={styles.linkPara}>Branding and UI/UX design for Joe’s new mobile app and ordering experience.</p>
               </div>
               <div>
-                <img src="../images/marqeta.webp" alt="Image 1" ref={(el) => (imageRefs.current[21] = el)} className="hover-image" />
+                <Image src={marta} alt="Image 1"  width={600} height={600}   ref={(el) => (imageRefs.current[21] = el)} className="hover-image" />
               </div>
             </Link>
         
@@ -396,7 +397,7 @@ const ImageHover = () => {
           <p className={styles.linkPara}>Branding, web design, and marketing assets.</p>
               </div>
               <div>
-                <img src="../images/marqeta.webp" alt="Image 1" ref={(el) => (imageRefs.current[22] = el)} className="hover-image" />
+                <Image src={marta} alt="Image 1"  width={600} height={600}   ref={(el) => (imageRefs.current[22] = el)} className="hover-image" />
               </div>
             </Link>
         
@@ -410,7 +411,7 @@ const ImageHover = () => {
 </p>
               </div>
               <div>
-                <img src="../images/marqeta.webp" alt="Image 1" ref={(el) => (imageRefs.current[23] = el)} className="hover-image" />
+                <Image src={marta} alt="Image 1"  width={600} height={600}   ref={(el) => (imageRefs.current[23] = el)} className="hover-image" />
               </div>
             </Link>
         
@@ -424,7 +425,7 @@ const ImageHover = () => {
 </p>
               </div>
               <div>
-                <img src="../images/marqeta.webp" alt="Image 1" ref={(el) => (imageRefs.current[24] = el)} className="hover-image" />
+                <Image src={marta} alt="Image 1"  width={600} height={600}   ref={(el) => (imageRefs.current[24] = el)} className="hover-image" />
               </div>
             </Link>
         
@@ -437,7 +438,7 @@ const ImageHover = () => {
           <p className={styles.linkPara}>Desktop and mobile UI/UX design for a leading gaming hardware company.</p>
               </div>
               <div>
-                <img src="../images/marqeta.webp" alt="Image 1" ref={(el) => (imageRefs.current[25] = el)} className="hover-image" />
+                <Image src={marta} alt="Image 1"  width={600} height={600}  ref={(el) => (imageRefs.current[25] = el)} className="hover-image" />
               </div>
             </Link>
         
@@ -451,7 +452,7 @@ const ImageHover = () => {
 </p>
               </div>
               <div>
-                <img src="../images/marqeta.webp" alt="Image 1" ref={(el) => (imageRefs.current[26] = el)} className="hover-image" />
+                <Image src="/images/marqeta.webp" alt="Image 1"  width={600} height={600}  ref={(el) => (imageRefs.current[26] = el)} className="hover-image" />
               </div>
             </Link>
         
@@ -460,7 +461,7 @@ const ImageHover = () => {
       </Container>
 
       <div className="cursor" ref={cursorRef}>
-        <img src="../images/snapchat.webp" alt="Cursor Image" className="cursor-image" />
+        <Image src="/images/snapchat.webp" alt="Cursor Image" width={600} height={600}  className="cursor-image" />
       </div>
     </>
   );

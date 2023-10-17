@@ -79,32 +79,32 @@ const CleientsLogo = () => {
                       <ul className={styles.social}>
                         <li>
                             <Link href='/'>
-                              <Image src={dribble} height={24} width={24} />
+                              <Image src={dribble} height={24} width={24} alt="slide"  />
                             </Link>
                         </li>
                         <li>
                             <Link href='/'>
-                              <Image src={behance} height={24} width={24}/>
+                              <Image src={behance} height={24} width={24} alt="slide"/>
                             </Link>
                         </li>
                         <li>
                             <Link href='/'>
-                              <Image src={instagram} height={24} width={24}/>
+                              <Image src={instagram} height={24} width={24} alt="slide"/>
                             </Link>
                         </li>
                         <li>
                            <Link href='/'>
-                              <Image src={linkedin} height={24} width={24}/>
+                              <Image src={linkedin} height={24} width={24} alt="slide"/>
                             </Link>
                         </li>
                         <li>
                            <Link href='/'>
-                              <Image src={twitter} height={24} width={24}/>
+                              <Image src={twitter} height={24} width={24} alt="slide"/>
                             </Link>
                         </li>
                         <li>
                            <Link href='/'>
-                              <Image src={facebook} height={24} width={24}/>
+                              <Image src={facebook} height={24} width={24} alt="slide"/>
                             </Link>
                         </li>
                       </ul>
