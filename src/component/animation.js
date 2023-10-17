@@ -1,8 +1,8 @@
 
+import React, { useEffect } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-// import { useEffect, React } from 'react';  
-import React, { useEffect, React } from 'react';
+
 gsap.registerPlugin(ScrollTrigger);
 const animation = ({ children }) => {
   useEffect(() => {
