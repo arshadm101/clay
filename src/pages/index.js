@@ -4,10 +4,8 @@ import BrandCollaps1 from '../component/BrandCollaps';
 import CleientsLogo from '../component/CleientsLogo';
 import Webprojects1 from '../component/Webprojects';
 import CalltoAction1 from '../component/CalltoAction'
-import Slider from '../component/Slider'
 // import CalltoActionthree from '../component/CalltoActionthree';
 // import Slider2 from '../component/Slider2'
-
 import Faqs from '../component/Faqs';
 
 export default function Home() {
@@ -25,7 +23,7 @@ export default function Home() {
             <CleientsLogo></CleientsLogo>
             <Webprojects1></Webprojects1>
             <CalltoAction1></CalltoAction1>
-            <Slider></Slider>
+          
             {/* <Slider></Slider> */}
             <Faqs></Faqs>
             {/* <CalltoActionthree></CalltoActionthree> */}

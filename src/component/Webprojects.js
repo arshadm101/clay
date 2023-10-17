@@ -22,6 +22,8 @@ const Webprojects = () => {
   const cursorRef = useRef(null);
 
   useEffect(() => {
+
+    
     gsap.set(cursorRef.current, { xPercent: -50, yPercent: -50 });
 
     const pos = { x: 0, y: 0 };
@@ -48,6 +50,8 @@ const Webprojects = () => {
       ySet(pos.y);
     });
 
+
+    
     // Cleanup event listener
     return () => {
       document.removeEventListener("mousemove", handleMouseMove);

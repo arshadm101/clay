@@ -1,9 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { Container,Col,Row, } from 'react-bootstrap';
-// import React, { useEffect, useRef } from 'react';
-import Accordion from 'react-bootstrap/Accordion';
-// import React, { useState } from 'react';
 import styles from '../styles/Footer.module.css';
 import dribble from 'public/images/dribble.svg'
 import behance from 'public/images/behance.svg'
@@ -45,21 +42,21 @@ const Footer = () => {
                           </Link> 
                         </li>
                         <li className=''>
-                        <Link href='https://g.page/clayglobal?share' className={`${styles.links}  mt-5`}>
+                          <Link href='https://g.page/clayglobal?share' className={`${styles.links}  mt-5`}>
                             <span className={`${styles.fonts20}   mt-5`}>Services </span>
                             <span className={styles.bottom_border}></span>
                           </Link> 
                         </li>
                         <li className=''>
-                        <Link href='https://g.page/clayglobal?share' className={`${styles.links}  mt-5`}>
+                          <Link href='https://g.page/clayglobal?share' className={`${styles.links}  mt-5`}>
                             <span className={`${styles.fonts20} mt-5`}>About </span>
                             <span className={styles.bottom_border}></span>
                           </Link> 
                         </li>
                         <li className=''>
-                        <Link href='https://g.page/clayglobal?share' className={`${styles.links}  mt-5`}>
-                            <span className={`${styles.fonts20}  mt-5`}>Contact </span>
-                            <span className={styles.bottom_border}></span>
+                          <Link href='https://g.page/clayglobal?share' className={`${styles.links}  mt-5`}>
+                              <span className={`${styles.fonts20}  mt-5`}>Contact </span>
+                              <span className={styles.bottom_border}></span>
                           </Link> 
                         </li>
                       </ul>

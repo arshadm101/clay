@@ -1,0 +1,90 @@
+.heading{
+    font-size: 44px;
+    font-family: UniversalSans-500-Headlines,Arial,sans-serif;
+    font-weight: 500;
+    line-height: 135%;
+    letter-spacing: -.02em;
+    padding-bottom: 40px;
+}
+.name{
+    font-family: UniversalSans-740,Arial,sans-serif;
+    font-size: 24px;
+    font-weight: 740;
+    line-height: 20px;
+    letter-spacing: -.01em;
+}
+.designation{
+    font-family: UniversalSans-500,Arial,sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: -.01em;
+    display: block;
+    color: var(--color-grey);
+}
+.black{
+    color: black;
+}
+.black:hover{
+    color: var(--color-grey);}
+/* .sliderHeding{
+        opacity: 0.5;
+        transition: all 1s ease-in-out;
+    } */
+.slider{
+    height: 500px;
+        opacity: 1;
+         -webkit-animation-duration: 1s;
+         -webkit-animation-name: slidein;
+
+         -moz-animation-duration: 1s;
+         -moz-animation-name: slidein;
+
+         -o-animation-duration: 1s;
+         -o-animation-name: slidein;
+
+         animation-duration: 1s;
+         animation-name: slidein;
+    }
+
+ 
+    @-webkit-keyframes slidein {
+        from {
+            margin-left: 100%;
+            width: 300%;
+        }
+        to {
+            margin-left: 0%;
+            width: 100%;
+        }
+    }
+    @-moz-keyframes slidein {
+        from {
+            margin-left: 100%;
+            width: 300%;
+        }
+        to {
+            margin-left: 0%;
+            width: 100%;
+        }
+    }
+     @-o-keyframes slidein {
+        from {
+            margin-left: 100%;
+            width: 300%;
+        }
+        to {
+            margin-left: 0%;
+            width: 100%;
+        }
+    }
+      @keyframes slidein {
+        from {
+            margin-left: 100%;
+            width: 300%;
+        }
+        to {
+            margin-left: 0%;
+            width: 100%;
+        }
+    }

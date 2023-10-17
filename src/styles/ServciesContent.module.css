@@ -1,0 +1,150 @@
+.Heading_level_1{
+    font-family: UniversalSans-740-Headlines,Arial,sans-serif;
+    font-size: 74px;
+    font-weight: 740;
+    line-height: 110%;
+    letter-spacing: -.03em;
+    margin-left: -1px;
+    margin-bottom: 32px;
+  }
+
+  .para{
+      font-family: UniversalSans-500,Arial,sans-serif;
+      font-size: 30px;
+      font-weight: 500;
+      line-height: 140%;
+      letter-spacing: -.02em;
+  }
+
+  .Heading_level_11{
+    font-family: UniversalSans-740-Headlines,Arial,sans-serif;
+    font-size: 30px;
+    font-weight: 740;
+    line-height: 110%;
+    letter-spacing: -.03em;
+    margin-left: -1px;
+    margin-bottom: 32px;
+  }
+  .para2{
+    font-family: UniversalSans-500,Arial,sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: -.02em;
+    color: var(--color-grey)
+}
+  .Industries{
+    border-bottom:1px solid var(--color-midnight)
+  }
+  .linkover{
+    position: relative;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    max-width: 270px;
+  }
+  .linkTitle{
+      font-family: UniversalSans-740-Headlines,Arial,sans-serif;
+      font-size: 30px;
+      font-weight: 740;
+      line-height: 50px;
+      letter-spacing: -.03em;
+      margin-bottom: 20px;
+      transform: translateY(15px);
+      transition-property: opacity,transform;
+      transition-duration: .9s,1.2s;
+      transition-timing-function: var(--easeOutExpo);
+      transition-delay: var(--menu-follow-delay);
+      transition-duration: .9s,1.5s;
+  }
+  .linkPara{
+    font-family: UniversalSans-500,Arial,sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: -.01em;
+    color: var(--color-shadow);
+    transform: translateY(15px);
+    transition-property: opacity,transform;
+    transition-duration: .9s,1.2s;
+    transition-timing-function: var(--easeOutExpo);
+    transition-delay: var(--menu-follow-delay);
+    transition-duration: .9s,1.5s;
+  }
+  .listtype{
+    list-style: none;
+    padding-top: 40px;
+  }
+  .listtype li{
+    position: relative;
+    font-family: var(--primaryfont);
+    font-size: 22px;
+    line-height: 120%;
+    letter-spacing: -.01em;
+    font-weight: 600;
+    line-height: 44px;
+    letter-spacing: -.02em;
+    color: var(--color-midnight);
+    transition-delay: calc(.21s + var(--menu-follow-delay));
+  }
+  .listtype li::before{
+    height: 3px;
+    width: 18px;
+    content: "";
+    position:absolute ;
+    left: -30px;
+    top: 50%;
+    background-color: var(--color-silver)
+  }
+
+  /* .absoluteBanner{
+    position: absolute;
+  } */
+ .hidedive{
+    position: absolute;
+    top: -300px;
+    width: 900px;
+    height: 900px;
+    z-index: -1;
+  
+    /* right: 0; */
+ }
+ .hidedive .VidMss{
+    right: 100;
+ }
+ .hidedive .VidMss1{
+  left: 100;
+}
+.Bannerback{
+  overflow: hidden;
+}
+.relativesec{
+  position: relative;
+  overflow-x: hidden;
+}
+ /* .VidMss{
+  position: absolute;
+  width: 900px;
+  height: 900px;
+  z-index: -1;
+  right: -200px;
+ }
+ .VidMss1{
+  position: absolute;
+  width: 900px;
+  height: 900px;
+  z-index: -1;
+  right: -200px;
+ } */
+ .absoluteBanner{
+  z-index: 2;
+    /* top: 0; */
+    /* position: relative; */
+ }
+ .Industry{
+  background-color: var(--color-darkMidnight);
+ }
+ /* .VidM{
+  width: 700px;
+  height: 700px;
+  top: -100px;
+ } */

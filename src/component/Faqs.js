@@ -6,7 +6,6 @@ import Accordion from 'react-bootstrap/Accordion'
 import React, { useState } from 'react'
 import styles from '../styles/Fqas.module.css'
 
-
 const Faqs = () => {
   
     const [isHovered, setIsHovered] = useState(false)

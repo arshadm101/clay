@@ -96,3 +96,29 @@
     width: 100%;
     height: 1px;
 }
+
+.sectionback{
+    position: relative;
+}
+/* .VidM{
+    position: absolute;
+    right: 0;
+    width: 700px;
+    height: 700px;
+    top: -50px;
+}
+.trustVid{
+    position: relative;
+    z-index: 100;
+    top: 0;
+} */
+
+.VidM{
+    position: absolute;
+    top: -32px;
+    width: 600px;
+    height: 600px;
+}
+.sectionback{
+    overflow-x: hidden;
+}

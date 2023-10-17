@@ -1,8 +1,10 @@
     .web1{
-        transform: scale(1.07);
+        transform: scale(1);
         transition: all 1.5s var(--easeOutExpo);
     }
-
+.web1{
+  
+}
     /* styles/ShaderImage.css */
 .image-container {
     position: relative;

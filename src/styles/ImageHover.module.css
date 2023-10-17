@@ -1,0 +1,51 @@
+.Heading_level_1{
+  font-family: UniversalSans-740-Headlines,Arial,sans-serif;
+  font-size: 74px;
+  font-weight: 740;
+  line-height: 110%;
+  letter-spacing: -.03em;
+  margin-left: -1px;
+  margin-bottom: 32px;
+}
+.para{
+    font-family: UniversalSans-500,Arial,sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: -.02em;
+}
+
+.linkover{
+  position: relative;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  max-width: 270px;
+}
+.linkTitle{
+    font-family: UniversalSans-740-Headlines,Arial,sans-serif;
+    font-size: 30px;
+    font-weight: 740;
+    line-height: 50px;
+    letter-spacing: -.03em;
+    margin-bottom: 20px;
+    transform: translateY(15px);
+    transition-property: opacity,transform;
+    transition-duration: .9s,1.2s;
+    transition-timing-function: var(--easeOutExpo);
+    transition-delay: var(--menu-follow-delay);
+    transition-duration: .9s,1.5s;
+}
+.linkPara{
+  font-family: UniversalSans-500,Arial,sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: -.01em;
+  color: var(--color-shadow);
+  transform: translateY(15px);
+  transition-property: opacity,transform;
+  transition-duration: .9s,1.2s;
+  transition-timing-function: var(--easeOutExpo);
+  transition-delay: var(--menu-follow-delay);
+  transition-duration: .9s,1.5s;
+}

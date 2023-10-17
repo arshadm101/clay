@@ -3,39 +3,39 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Container,Col,Row, } from 'react-bootstrap'
 import Accordion from 'react-bootstrap/Accordion'
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Styles from '../styles/BrandCollaps.module.css';
 // import React, { useEffect, useRef } from 'react';
-// import colappse1 from 'public/images/collaps1.webp'
-// import colappse2 from 'public/images/collaps2.webp'
-// import colappse3 from 'public/images/collaps3.webp'
+import colappse1 from '/public/images/collaps1.webp';
+import colappse2 from '/public/images/collaps2.webp';
+import colappse3 from '/public/images/collaps3.webp';
+import colappse5 from '/public/images/collaps5.webp';
 
-const BrandCollaps = () => {
+const images = [colappse1, colappse2, colappse3, colappse5]; // Define your image sources here
+const imageDescriptions = ['Image1 Description', 'Image2 Description', 'Image3 Description', 'Image4 Description'];
 
-    const [isHovered, setIsHovered] = useState(false)
-    const [isClicked, setIsClicked] = useState(false)
-  
-    const handleHover = () => {
-      setIsHovered(!isHovered)
-    }
-  
-    const handleClick = () => {
-      setIsClicked(!isClicked)
-    }
-  
-    const getImageSource = () => {
-      if (isClicked) {
-        return '/public/images/collaps1.webp'
-      } else if (isHovered) {
-        return '/public/images/collaps1.webp'
-      } else {
-        return '/public/images/collaps1.webp'
-      }
-    }
+function BrandCollaps() {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
+  const handleClick = () => {
+    const newIndex = (currentImageIndex + 1) % images.length;
+    setCurrentImageIndex(newIndex);
+  };
+
+  const handleHover = () => {
+    const newIndex = (currentImageIndex + 1) % images.length;
+    setCurrentImageIndex(newIndex);
+  };
+
+  const handleTabClick = (tabIndex) => {
+    setCurrentImageIndex(tabIndex);
+  };
+  const currentImage = images[currentImageIndex];
+  const currentImageDescription = imageDescriptions[currentImageIndex];
+    
     return (
         <>
-                <section className='pt-130 pb-65'>
+            <section className='pt-130 pb-65'>
                     <Container>
                         <Row>
                             <Col lg={6}>
@@ -43,49 +43,39 @@ const BrandCollaps = () => {
                             </Col>
                             <Col lg={2}>
                                 <div>
-                                    <Image src={getImageSource()} alt='Image' width={400} height={400}/>
+<Image src={currentImage} alt={currentImageDescription} width={400} height={400} onError={(e) => { console.error('Image load error:', e);}} />
                                 </div>
                             </Col>
                             <Col lg={4} className='brands'>
-                                <Accordion defaultActiveKey='0' flush>
+                                <Accordion flush>
                                     <Accordion.Item eventKey='0'>
-                                            <Accordion.Header onMouseEnter={handleHover}
-                                            onMouseLeave={handleHover}
-                                            onClick={handleClick}>Branding</Accordion.Header>
+                                        <Accordion.Header  onMouseEnter={handleHover}  onMouseLeave={handleHover} onClick={() => handleTabClick(0)}>Branding</Accordion.Header>
                                             <Accordion.Body>
                                                 <p>
                                                     A brand is more than just a logo and color palette. We will craft a distinct visual and verbal identity, create necessary assets, and establish clear brand guidelines to maintain consistency across all touchpoints. </p>
                                             </Accordion.Body>
                                     </Accordion.Item>
                                     <Accordion.Item eventKey='1'>
-                                            <Accordion.Header  onMouseEnter={handleHover}
-                                            onMouseLeave={handleHover}
-                                            onClick={handleClick}>Digital Products</Accordion.Header>
+                                            <Accordion.Header  onMouseEnter={handleHover}  onMouseLeave={handleHover} onClick={() => handleTabClick(1)}>Digital Products</Accordion.Header>
                                             <Accordion.Body>
                                                 <p>
                                                     Clay concentrates on designing authentic connections through the use of both aesthetics and behavioral science. Our team of senior UI/UX designers delivers engaging digital products that help brands thrive in the modern economy.</p>
                                             </Accordion.Body>
                                     </Accordion.Item>
-                                    <Accordion.Item eventKey='2' onMouseEnter={handleHover}
-                                            onMouseLeave={handleHover}
-                                            onClick={handleClick}>
+                                    <Accordion.Item eventKey='2' onMouseEnter={handleHover}  onMouseLeave={handleHover} onClick={() => handleTabClick(2)}>
                                             <Accordion.Header>Websites</Accordion.Header>
                                             <Accordion.Body>
                                                 <p>A modern brand is defined by its digital presence, starting with the website. We focus on creating websites that effectively convey the brands identity and perspective for an enhanced user experience.</p>
                                             </Accordion.Body>
                                     </Accordion.Item>
-                                    <Accordion.Item eventKey='3' onMouseEnter={handleHover}
-                                            onMouseLeave={handleHover}
-                                            onClick={handleClick}>
+                                    <Accordion.Item eventKey='3' onMouseEnter={handleHover}  onMouseLeave={handleHover} onClick={() => handleTabClick(3)}>
                                             <Accordion.Header>Development</Accordion.Header>
                                             <Accordion.Body>
                                                 <p>  Our web developers are committed to achieving both visual and performance excellence. From the backend to the frontend, we prioritize delivering a seamless and enjoyable user experience on all devices.
                                                 </p>
                                             </Accordion.Body>
                                     </Accordion.Item>
-                                    <Accordion.Item eventKey='4' onMouseEnter={handleHover}
-                                                onMouseLeave={handleHover}
-                                                onClick={handleClick}>
+                                    <Accordion.Item eventKey='4' onMouseEnter={handleHover}  onMouseLeave={handleHover} onClick={() => handleTabClick(4)}>
                                             <Accordion.Header>Content</Accordion.Header>
                                             <Accordion.Body>
                                                 <p>

@@ -1,6 +1,8 @@
 .CleientsLogo{
     padding:60px 0 60px 0;
 }
+
+
 .logos{
   
     transition-property: opacity, filter;
@@ -9,6 +11,10 @@
     transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1), cubic-bezier(0.19, 1, 0.22, 1);
     opacity: 1; 
     filter: blur(0px);
+}
+.logos img:hover {
+    filter: brightness(0) invert(1);
+    transform: scale(1.1);
 }
 
 /* CleientsLogo.module.css */

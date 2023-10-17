@@ -34,6 +34,14 @@
   --secondary:UniversalSans-740,Arial,sans-serif;
 
 }
+body{
+  height: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+}
 
 ol, ul {
   padding-left: 0rem;
@@ -208,10 +216,24 @@ address {
 .dg .color,.dg.ac {
   z-index: 1000!important
 }
+
+
 .navbar-nav .nav-link{
-  color: #050411 !important;
+  color: #050411 ;
   padding: 6px 30px !important;
   font-size: 20px;
+}
+.Homeheader .headerblack1 .nav-link{
+  color: white !important;
+ 
+}
+.navbar-nav .nav-link{
+  color: #050411;
+  padding: 6px 30px !important;
+  font-size: 20px;
+}
+.headerblack1 .navbar-nav .nav-link{
+  color: #fff !important;
 }
 .navbar-nav .nav-link{
   position: relative;
@@ -248,7 +270,7 @@ address {
   top: 0;
   left: 0;
   right: 0;
-  background-color: #fff;
+  background-color: transparent;
   transition: transform 0.5s ease-in-out;
   transform: translateY(-200%);  
   opacity: 0.5;
@@ -262,6 +284,9 @@ address {
 
 .pt-130{
   padding-top: 129px;
+}
+.pb-130{
+  padding-bottom: 129px;
 }
 .pb-65{
   padding-bottom: 65px;
@@ -387,4 +412,103 @@ address {
 }
 .swiper-container{
   position: relative;
+}
+/*  */
+/* styles/globals.css */
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.cursor img {
+  width: 30px;
+  height: 30px; 
+  position: absolute;
+  transition: transform 0.2s ease;
+}
+
+.hover-link {
+  font-size: 18px; 
+  color: #333; 
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  margin: 20px;
+}
+
+.hover-image {
+  position: absolute;
+  top: 0%;
+  right: -0%;
+  /* transform: translate(74%, -99%); */
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  height: 250px;
+  width: 250px;
+}
+
+.hover-link:hover .hover-image {
+  opacity: 1;
+}
+
+/* 
+
+.swiper-button-prev,
+.swiper-button-next {
+  display: none; 
+}
+
+.swiper-container:hover .swiper-button-prev,
+.swiper-container:hover .swiper-button-next {
+  display: block; 
+}
+
+
+.swiper-button-prev {
+  left: 10px;
+}
+
+.swiper-button-next {
+  right: 10px;
+}
+
+.swiper-button-prev {
+  border: 1px solid #111;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #111;
+  left: 30px;
+}
+  .swiper-button-prev:hover {
+    border: 1px solid #fff;
+}
+.swiper-button-nex {
+  border: 1px solid #111;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #111;
+  right: 30px;
+}
+.swiper-button-nex:hover {
+    border: 1px solid #fff;
+}
+
+.swiper-button-next:hover:after,
+.swiper-button-prev:hover:after {
+color: #fff;
+} */
+
+.headerblack{
+  background: var(--color-darkMidnight)
+}
+.headerblack nav.navbar-dark.visible.navbar.navbar-expand-lg.navbar-light{
+  background: var(--color-darkMidnight) !important
+}
+
+.nav-link:hover, .nav-link:focus{
+  color: #000 !important
 }

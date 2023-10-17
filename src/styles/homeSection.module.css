@@ -12,9 +12,73 @@
 
 }
 .Heading_level_1{
-    padding-bottom: 120px;
+    padding-bottom: 75px;
 
+}
+.RowModel{
+    position: relative;
 }
 /* .scrollimagecontainer{
     height: 100vh;
+} */
+.VideoButtonPlay {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: medium;
+    text-transform: uppercase;
+    color: #fff;
+    width: 54px;
+    height: 54px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+}
+.VideoButtonPlay{
+    width: 140px;
+    height: 140px;
+}
+
+.VideoButtonPlay_Circle {
+    position: absolute;
+    z-index: 0;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    border-radius: 50%;
+    background-color: rgba(0,0,0,.4);
+    width: 150px;
+    height: 150px;
+    transition-property: transform,background-color;
+    transition-duration: 5s;
+    transition-timing-function: ease-out,linear;
+    transition: all .65s ease-in-out;
+}
+
+.VideoButtonPlay_Icon {
+    width: 34px;
+    height: 34px;
+    z-index: 1;
+    transition: transform .65s var(--ease-out);
+    cursor: pointer;
+}
+
+.VideoButtonPlay {
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    z-index: 2;
+    top: 50%;
+}
+.scrollimagecontainer:hover .VideoButtonPlay_Circle{
+    width: 200px;
+    height: 200px;
+    /* width: 100px;
+    height: 100px; */
+}
+/* .VideoButtonPlay_Icon:hover{
+    width: 100px;
+    height: 100px;
 } */

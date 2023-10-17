@@ -13,3 +13,13 @@
     width: 100%;
     overflow-x: hidden;
 }
+.headerblack{
+    background-color: var(--color-darkMidnight)
+}
+.headerblack .navbar-dark{
+    background-color: var(--color-darkMidnight)
+}
+
+.headerblack1 .navbar-nav .nav-link{
+    color: #fff;
+}
