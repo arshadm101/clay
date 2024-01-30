@@ -1,10 +1,10 @@
+import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { getStaticPaths } from 'next';
 import { Container, Col, Row } from 'react-bootstrap';
 import { gsap } from 'gsap';
 import styles from '../styles/testimonial.module.css';
-import React, { useState } from 'react';
 
 const slideData = [
     {
@@ -38,7 +38,7 @@ name: 'Mike Kane',
 designation: 'Co-Founder, Ookla',
 },
 
-  ];
+];
 
 const testimonial = () => {
   const [activeSlide, setActiveSlide] = useState(0);
