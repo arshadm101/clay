@@ -40,25 +40,27 @@ designation: 'Co-Founder, Ookla',
 
 ];
 
-const testimonial = () => {
+const testimonial = () => { // Capitalized the function name
   const [activeSlide, setActiveSlide] = useState(0);
+
   const handleSlideChange = (direction) => {
     const newSlide =
       direction === 'next'
-        ? (activeSlide + 1) % slideData.length : (activeSlide - 1 + slideData.length) % slideData.length;
-      const currentSlidePosition = direction === 'next' ? '-100%' : '100%';
-      const newSlidePosition = '0';
+        ? (activeSlide + 1) % slideData.length
+        : (activeSlide - 1 + slideData.length) % slideData.length;
+    const currentSlidePosition = direction === 'next' ? '-100%' : '100%';
+    const newSlidePosition = '0';
 
     gsap.fromTo(
       `.${styles.sliderHeading}`,
       {
         x: currentSlidePosition,
-        opacity: 0, 
-        autoAlpha:1,
+        opacity: 0,
+        autoAlpha: 1,
       },
       {
-        x: newSlidePosition, 
-        autoAlpha:1, 
+        x: newSlidePosition,
+        autoAlpha: 1,
         duration: 0.5,
         onComplete: () => {
           setActiveSlide(newSlide);
@@ -67,40 +69,53 @@ const testimonial = () => {
     );
   };
 
+  
 return (
       <>
-        <section className="pb-130 pt-130">
-            <Container>
-                <div>
-                <Row>
-                    <Col lg={9}>
-                        <div className={styles.slider}>
-                            <div className={styles.sliderHeading}>
-                                <h3 className={styles.heading}>{slideData[activeSlide].text}</h3>
-                                <div>
-                                <h4 className={styles.name}>{slideData[activeSlide].name}</h4>
-                                <p className={styles.designation}>{slideData[activeSlide].designation}</p>
-                                </div>
-                            </div>
-                        </div>
-                    </Col>
-                    <Col lg={1}></Col>
-                    <Col lg={2}>
-                        <div className="d-flex justify-content-around pt-5">
-                           <div href="#" className={styles.black} onClick={() => handleSlideChange('prev')}>
-                            <span><svg width="2.1em" height="1.6em" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.322 7.926 9.91 2.179 8.437.664.335 8.997l8.102 8.334 1.473-1.515-5.588-5.747h19.346V7.926H4.322Z" fill="currentColor"></path></svg></span>
-                            </div>
-                            <div href="#" className={styles.black} onClick={() => handleSlideChange('next')}>
-                            <span>
-                            <svg width="2.1em" height="1.6em" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.678 7.926 14.09 2.179 15.563.664l8.102 8.333-8.102 8.334-1.473-1.515 5.588-5.747H.332V7.926h19.346Z" fill="currentColor"></path></svg>
-                            </span>
-                            </div>
-                        </div>
-                    </Col>
-                </Row>
+       <section className="pb-130 pt-130">
+        <Container>
+          <div>
+            <Row>
+              <Col lg={9}>
+                <div className={styles.slider}>
+                  <div className={styles.sliderHeading}>
+                    <h3 className={styles.heading}>{slideData[activeSlide].text}</h3>
+                    <div>
+                      <h4 className={styles.name}>{slideData[activeSlide].name}</h4>
+                      <p className={styles.designation}>{slideData[activeSlide].designation}</p>
+                    </div>
+                  </div>
                 </div>
-            </Container>
-        </section>     
+              </Col>
+              <Col lg={1}></Col>
+              <Col lg={2}>
+                <div className="d-flex justify-content-around pt-5">
+                  <div href="#" className={styles.black} onClick={() => handleSlideChange('prev')}>
+                    <span>
+                      <svg width="2.1em" height="1.6em" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M4.322 7.926 9.91 2.179 8.437.664.335 8.997l8.102 8.334 1.473-1.515-5.588-5.747h19.346V7.926H4.322Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                    </span>
+                  </div>
+                  <div href="#" className={styles.black} onClick={() => handleSlideChange('next')}>
+                    <span>
+                      <svg width="2.1em" height="1.6em" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M19.678 7.926 14.09 2.179 15.563.664l8.102 8.333-8.102 8.334-1.473-1.515 5.588-5.747H.332V7.926h19.346Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+              </Col>
+            </Row>
+          </div>
+        </Container>
+      </section>    
       </>
     );
   };
