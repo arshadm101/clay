@@ -40,7 +40,7 @@ designation: 'Co-Founder, Ookla',
 
 ];
 
-const testimonial = () => { // Capitalized the function name
+const Testimonial = () => { // Capitalized the function name
   const [activeSlide, setActiveSlide] = useState(0);
 
   const handleSlideChange = (direction) => {
@@ -69,10 +69,9 @@ const testimonial = () => { // Capitalized the function name
     );
   };
 
-  
-return (
-      <>
-       <section className="pb-130 pt-130">
+  return (
+    <>
+      <section className="pb-130 pt-130">
         <Container>
           <div>
             <Row>
@@ -115,9 +114,9 @@ return (
             </Row>
           </div>
         </Container>
-      </section>    
-      </>
-    );
-  };
-  
-  export default testimonial;
+      </section>
+    </>
+  );
+};
+
+export default Testimonial;
