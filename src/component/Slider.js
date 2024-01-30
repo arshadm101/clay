@@ -72,71 +72,68 @@ const Slider = () => {
     
 return (
       <>
-
-<section className={`${styles.sectionback} pb-100`}>
-<Swiper
-      modules={[Navigation, Pagination, Scrollbar, A11y]}
-      spaceBetween={30}
-      slidesPerView={3}
-      navigation={{  nextEl: '.swiper-button-next',prevEl: '.swiper-button-prev' }}
-      pagination={{ clickable: true }}
-      // scrollbar={{ draggable: true }}
-      // onSwiper={(swiper) => console.log(swiper)}
-      // onSlideChange={() => console.log('slide change')}
-    >
-      <SwiperSlide>
-        <div className="swiper-slide">
-            <Image src={img1} width={400} height={400} alt="slide"/>
-        </div>
-      </SwiperSlide>
-      <SwiperSlide>
-          <div className="swiper-slide">
-              <Image src={img2} width={400} height={400} alt="slide"/>
-          </div>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div className="swiper-slide">
-            <Image src={img3} width={400} height={400} alt="slide"/>
-         </div>
-      </SwiperSlide>
-      <SwiperSlide>
-          <div className="swiper-slide">
-              <Image src={img5} width={400} height={400} alt="slide"/>
-          </div>
-      </SwiperSlide>
-      <SwiperSlide>
-          <div className="swiper-slide">
-              <Image src={img6} width={400} height={400} alt="slide"/>
-          </div>
-      </SwiperSlide>
-      <SwiperSlide>
-          <div className="swiper-slide">
-              <Image src={img7} width={400} height={400} alt="slide"/>
-          </div>
-      </SwiperSlide>
-      <SwiperSlide>
-          <div className="swiper-slide">
-              <Image src={img8} width={400} height={400} alt="slide"/>
-          </div>
-      </SwiperSlide>
-      <SwiperSlide>
-          <div className="swiper-slide">
-              <Image src={img9} width={400} height={400} alt="slide"/>
-          </div>
-      </SwiperSlide>
-      <SwiperSlide>
-          <div className="swiper-slide">
-              <Image src={img10} width={400} height={400} alt="slide"/>
-          </div>
-      </SwiperSlide>
-      <SwiperSlide>
-          <div className="swiper-slide">
-              <Image src={img11} width={400} height={400} alt="slide"/>
-          </div>
-      </SwiperSlide>
-    </Swiper>
-          
-          
+        <section className={`${styles.sectionback} pb-100`}>
+            <Swiper
+                modules={[Navigation, Pagination, Scrollbar, A11y]}
+                spaceBetween={30}
+                slidesPerView={3}
+                navigation={{  nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' }}
+                pagination={{ clickable: true }}
+                // scrollbar={{ draggable: true }}
+                // onSwiper={(swiper) => console.log(swiper)}
+                // onSlideChange={() => console.log('slide change')}
+                >
+                <SwiperSlide>
+                    <div className="swiper-slide">
+                        <Image src={img1} width={400} height={400} alt="slide"/>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className="swiper-slide">
+                        <Image src={img2} width={400} height={400} alt="slide"/>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className="swiper-slide">
+                        <Image src={img3} width={400} height={400} alt="slide"/>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className="swiper-slide">
+                        <Image src={img5} width={400} height={400} alt="slide"/>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className="swiper-slide">
+                        <Image src={img6} width={400} height={400} alt="slide"/>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className="swiper-slide">
+                        <Image src={img7} width={400} height={400} alt="slide"/>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className="swiper-slide">
+                        <Image src={img8} width={400} height={400} alt="slide"/>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className="swiper-slide">
+                        <Image src={img9} width={400} height={400} alt="slide"/>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className="swiper-slide">
+                        <Image src={img10} width={400} height={400} alt="slide"/>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className="swiper-slide">
+                        <Image src={img11} width={400} height={400} alt="slide"/>
+                    </div>
+                </SwiperSlide>
+            </Swiper>
         </section>     
       </>
     );

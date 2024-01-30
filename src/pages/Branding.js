@@ -26,18 +26,15 @@ const Webprojects = () => {
   };
 
   const cursorRef = useRef(null);
-
   useEffect(() => {
     var targets = gsap.utils.toArray(".Section1"); 
 
-// GSAP scrollTrigger BATCH
   ScrollTrigger.batch(".inner", {
   
       onEnter: batch => gsap.to(batch, {duration:1, opacity: 1, y: 0, stagger: {each: 0.15, grid: [1, 3]}, overwrite: true}),
       onLeave: batch => gsap.set(batch, {opacity: 0, y: -200, overwrite: true}),
       onEnterBack: batch => gsap.to(batch, {opacity: 1, y: 0, stagger: 0.15, overwrite: true}),
       onLeaveBack: batch => gsap.set(batch, {opacity: 0, y: 200, overwrite: true})
-      // you can also define things like start, end, etc.
     });
   
    ScrollTrigger.addEventListener("refreshInit", () => gsap.set(".inner", {y: 0}));
@@ -85,27 +82,31 @@ const Webprojects = () => {
                   <Col lg={3}>
                       <ul className={`${styles.Heading_level_0}`}>
                           <li>
-                              <Link href="/AllWork" className={activeTab === 'AllWork' ? `${styles.active}` : ''}
-            onClick={() => handleTabClick('/AllWork')}>All Work <sup>31</sup></Link>
+                              <Link href="/works" className={activeTab === 'works' ? `${styles.active} active` : ''}
+            onClick={() => handleTabClick('/works')}>All Work <sup>31</sup></Link>
                           </li>
+
                           <li>
                               <Link  href="/DigitalProducts" className={activeTab === 'DigitalProducts' ? `${styles.active}` : ''}
             onClick={() => handleTabClick('/DigitalProducts')}>Digital Products <sup>14</sup></Link>
                           </li>
+
                           <li>
                               <Link href="/Websites" className={activeTab === 'Websites' ? `${styles.active}` : ''}
             onClick={() => handleTabClick('Websites')}>Websites <sup>17</sup></Link>
                           </li>
+
                           <li>
                               <Link href="/Branding" className={activeTab === 'Branding' ? `${styles.active}` : ''}
             onClick={() => handleTabClick('/Branding')}>Branding <sup>7</sup></Link>
                           </li>
+
                       </ul>
                   </Col>
               </Row>
              </Container>     
         </section>
-          <section className={`${styles.Section1} pb-130 `} >
+          <section className={`${styles.Section1} pb-130`} >
               <Container>
                 <Row>
                    <Col lg={6} className='inner'>

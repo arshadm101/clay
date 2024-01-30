@@ -21,11 +21,11 @@ const CleientsLogo = () => {
           <section className={`${styles.bgcolor} pt-130 pb-130`}>
             <Container className="pb-130">
               <Row>
-                <Col lg={7}>
+                <Col xxl={7} xl={7} lg={7}>
                     <h1 className={styles.Heading_level_1}>Lets Talk</h1>
                     <p className={styles.para}>We would love to learn more about you and <br/> what we can design and build together.</p>
                     <Row>
-                      <Col lg={6}>
+                      <Col xxl={6} xl={6} lg={6}>
                             <div className="pt-5">
                                 <h4 className={styles.titlePara}>Become a Client</h4>
                                 <Link href="mailto:hey@clay.global" className={styles.links}>
@@ -40,7 +40,7 @@ const CleientsLogo = () => {
                         </Link> 
                     </div>
                       </Col>  
-                      <Col lg={6}>
+                      <Col xxl={6} xl={6} lg={6}>
                         <div className="pt-5">
                             <h4 className={styles.titlePara}>Become a Client</h4>
                             <Link href="mailto:hey@clay.global" className={styles.links}>
@@ -73,7 +73,7 @@ const CleientsLogo = () => {
                         </Col>  
                     </Row>
                     <Row>
-                        <Col lg={12}>
+                        <Col xxl={12} xl={12} lg={12}>
                         <div className='pt-5'>
                       <ul className={styles.social}>
                         <li>
@@ -111,7 +111,7 @@ const CleientsLogo = () => {
                         </Col>
                     </Row>
                 </Col>
-                <Col lg={5}>
+                <Col xxl={5} xl={5} lg={5}>
                     <Image src={Contact} alt="Image"  />
                 </Col>
               </Row> 

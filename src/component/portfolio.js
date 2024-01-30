@@ -13,44 +13,35 @@ import { Container,Col,Row, } from "react-bootstrap";
 import styles from '../styles/Portfolio.module.css'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import React, { useEffect, useRef, useState } from 'react';
-// import ThreeScene from './ThreeScene';
-// import ImageWithShader from '../component/ImageWithShader';
 import gsap from 'gsap';
+
 gsap.registerPlugin (ScrollTrigger);
-
 const Webprojects = () => {
-
   const [activeTab, setActiveTab] = useState('AllWork');
   const handleTabClick = (tabName) => {
     setActiveTab(tabName);
   };
 
   const cursorRef = useRef(null);
-
   useEffect(() => {
   var targets = gsap.utils.toArray(".Section1"); 
-
-    // GSAP scrollTrigger BATCH
-    ScrollTrigger.batch(".inner", {
+  ScrollTrigger.batch(".inner", {
       onEnter: batch => gsap.to(batch, {duration:1, opacity: 1, y: 0, stagger: {each: 0.15, grid: [1, 3]}, overwrite: true}),
       onLeave: batch => gsap.set(batch, {opacity: 0, y: -200, overwrite: true}),
       onEnterBack: batch => gsap.to(batch, {opacity: 1, y: 0, stagger: 0.15, overwrite: true}),
       onLeaveBack: batch => gsap.set(batch, {opacity: 0, y: 200, overwrite: true})
-    });
+  });
   
    ScrollTrigger.addEventListener("refreshInit", () => gsap.set(".inner", {y: 0}));
    gsap.set ('.inner', {y:200});
-
    gsap.to(".inner", {delay:.4, duration:1, autoAlpha:1, y:0, ease: "power2.out",  stagger: {amount: .25}});
-
-    gsap.set(cursorRef.current, { xPercent: -50, yPercent: -50 });
-
+   gsap.set(cursorRef.current, { xPercent: -50, yPercent: -50 });
     const pos = { x: 0, y: 0 };
     const mouse = { x: pos.x, y: pos.y };
     const speed = 0.2;
     const xSet = gsap.quickSetter(cursorRef.current, "x", "px");
     const ySet = gsap.quickSetter(cursorRef.current, "y", "px");
-
+   
     const handleMouseMove = (e) => {
       mouse.x = e.clientX;
       mouse.y = e.clientY;
@@ -59,7 +50,6 @@ const Webprojects = () => {
     document.addEventListener("mousemove", handleMouseMove);
 
     gsap.ticker.add(() => {
-      // Adjust speed for higher refresh monitors
       const dt = 1.0 - Math.pow(1.0 - speed, gsap.ticker.deltaRatio());
       pos.x += (mouse.x - pos.x) * dt;
       pos.y += (mouse.y - pos.y) * dt;
@@ -71,21 +61,22 @@ const Webprojects = () => {
     return () => {
       document.removeEventListener("mousemove", handleMouseMove);
     };
+
   }, []);
     return (
         <>
         <section className='pt-130 pb-130 '>
-             <Container>
-              <Row>
-                  <Col lg={8}>
+          <Container>
+            <Row>
+                  <Col xxl={8} xl={8} lg={8}>
                       <h2 className={`${styles.Heading_level_1}`}>We bring your boldest ideas to life</h2>   
                   </Col>
-                  <Col lg={1}></Col>
-                  <Col lg={3}>
+                  <Col xxl={1} xl={1} lg={1}></Col>
+                  <Col xxl={3} xl={3} lg={3}>
                       <ul className={`${styles.Heading_level_0}`}>
                           <li>
-                              <Link href="/AllWork" className={activeTab === 'AllWork' ? `${styles.active}` : ''}
-            onClick={() => handleTabClick('/AllWork')}>All Work <sup>31</sup></Link>
+                              <Link href="/works" className={activeTab === 'works' ? `${styles.active}` : ''}
+            onClick={() => handleTabClick('/works')}>All Work <sup>31</sup></Link>
                           </li>
                           <li>
                               <Link  href="/DigitalProducts" className={activeTab === 'DigitalProducts' ? `${styles.active}` : ''}
@@ -101,13 +92,17 @@ const Webprojects = () => {
                           </li>
                       </ul>
                   </Col>
-              </Row>
-             </Container>     
+            </Row>
+          </Container>     
         </section>
-          <section className={`${styles.Section1} pb-130 `} >
-              <Container>
+       
+        <section className={`${styles.Section1} pb-130`} >
+
+            <Container>
+
                 <Row className='justify-content-center align-items-center'>
-                   <Col lg={6} className='inner'>
+              
+                  <Col xxl={6} xl={6} lg={6} className='inner'>
                     <div className={styles.web1}> 
                     <Link  href="/" ref={cursorRef} >
                     <Image src={Slack} className={styles.animatedimage} alt="Your Animated Image"   />
@@ -122,7 +117,7 @@ const Webprojects = () => {
                     </div>
                    </Col>
 
-                   <Col lg={6} className='pt-130 inner'>
+                   <Col  xxl={6} xl={6} lg={6} className='pt-130 inner'>
                     <div className={styles.web1}> 
                     <Link  href="/" ref={cursorRef}>
                     <Image src={Cornerston} className={styles.animatedimage} alt="Your Animated Image"   />
@@ -138,9 +133,12 @@ Web experience for an enterprise people development platform</p>
                       </ul>
                     </div>
                    </Col>
+
                 </Row>
+
                 <Row className='justify-content-center align-items-center'>
-                   <Col lg={10} className='pt-130 inner'>
+                  
+                   <Col xxl={10} xl={10} lg={10} className='pt-130 inner'>
                     <div className={styles.web1}> 
                     <Link  href="/" ref={cursorRef}>
                     <Image src={Animatedbacktext} className={styles.animatedimage} alt="Your Animated Image"  />
@@ -154,57 +152,64 @@ Web experience for an enterprise people development platform</p>
                       </ul>
                     </div>
                    </Col>
-                   <Col lg={2}></Col>
+
+                   <Col xxl={2} xl={2} lg={2}></Col>
                 </Row>
+
                 <Row className='pt-130'>
-                <Col lg={6} className='pt-130 inner'>
-                    <div className={styles.web1}> 
-                    <Link  href="/" ref={cursorRef}>
-                    <Image src={Ajuice} alt="Your Animated Image" className={styles.animatedimage}   />
-                    </Link>
-                      <h4 className={`${styles.headingh4} mt-4  secondary-font fw700`}>Joe & The Juice </h4>
-                      <p className='text'>A digital commerce and loyalty app for a global coffee shop chain</p>
-                      <ul>
-                        <li>UX/UI</li>
-                        <li>Mobile App</li>
-                        <li>Consumer</li>
-                      </ul>
-                    </div>
-                   </Col>
-                   <Col lg={6} className='inner'>
-                    <div className={styles.web1}> 
-                    <Link  href="/" ref={cursorRef}>
-                    <Image src={Snapchat} alt="Your Animated Image" className={styles.animatedimage}   />
-                    </Link>
-                      <h4 className={`${styles.headingh4} mt-4  secondary-font fw700`}>SnapChat </h4>
-                      <p className='text'>Integrating augmented reality to elevate social commerce</p>
-                      <ul>
-                        <li>UX/UI</li>
-                        <li>Mobile App</li>
-                        <li>Ecommerce</li>
-                      </ul>
-                    </div>
-                   </Col>
+                
+                  <Col xxl={6} xl={6} lg={6} className='pt-130 inner'>
+                      <div className={styles.web1}> 
+                      <Link  href="/" ref={cursorRef}>
+                      <Image src={Ajuice} alt="Your Animated Image" className={styles.animatedimage}   />
+                      </Link>
+                        <h4 className={`${styles.headingh4} mt-4  secondary-font fw700`}>Joe & The Juice </h4>
+                        <p className='text'>A digital commerce and loyalty app for a global coffee shop chain</p>
+                        <ul>
+                          <li>UX/UI</li>
+                          <li>Mobile App</li>
+                          <li>Consumer</li>
+                        </ul>
+                      </div>
+                    </Col>
+
+                    <Col  xxl={6} xl={6} lg={6} className='inner'>
+                      <div className={styles.web1}> 
+                      <Link  href="/" ref={cursorRef}>
+                      <Image src={Snapchat} alt="Your Animated Image" className={styles.animatedimage}   />
+                      </Link>
+                        <h4 className={`${styles.headingh4} mt-4  secondary-font fw700`}>SnapChat </h4>
+                        <p className='text'>Integrating augmented reality to elevate social commerce</p>
+                        <ul>
+                          <li>UX/UI</li>
+                          <li>Mobile App</li>
+                          <li>Ecommerce</li>
+                        </ul>
+                      </div>
+                    </Col>
+
                 </Row>
+
                 <Row className='pt-130 justify-content-center align-items-center'>
-                  <Col lg={2}></Col>
-                   <Col lg={10} className='inner'>
-                    <div className={styles.web1}> 
-                    <Link  href="/" ref={cursorRef}>
-                    <Image src={Noun} className={styles.animatedimage} alt="Your Animated Image"  />
-                    </Link>
-                      <h4 className={`${styles.headingh4} mt-4  secondary-font fw700`}>Nuant </h4>
-                      <p className='text'>Design system for a crypto asset intelligence solution</p>
-                      <ul>
-                        <li>UI/UX</li>
-                        <li>Web App</li>
-                        <li>Web3</li>
-                      </ul>
-                    </div>
-                   </Col>
+                  <Col  xxl={2} xl={2} lg={2}></Col>
+                    <Col xxl={10} xl={10} lg={10} className='inner'>
+                      <div className={styles.web1}> 
+                      <Link  href="/" ref={cursorRef}>
+                      <Image src={Noun} className={styles.animatedimage} alt="Your Animated Image"  />
+                      </Link>
+                        <h4 className={`${styles.headingh4} mt-4  secondary-font fw700`}>Nuant </h4>
+                        <p className='text'>Design system for a crypto asset intelligence solution</p>
+                        <ul>
+                          <li>UI/UX</li>
+                          <li>Web App</li>
+                          <li>Web3</li>
+                        </ul>
+                      </div>
+                    </Col>
                 </Row> 
+
                 <Row className='pt-130 inner justify-content-center align-items-center'>
-                   <Col lg={6} className='inner'>
+                   <Col xxl={6} xl={6} lg={6} className='inner'>
                     <div className={styles.web1}> 
                     <Link  href="/" ref={cursorRef}>
                     <Image src={Wealth} className={styles.animatedimage} alt="Your Animated Image" />
@@ -219,7 +224,7 @@ Web experience for an enterprise people development platform</p>
                       </ul>
                     </div>
                    </Col>
-                   <Col lg={6} className='pt-130 inner'>
+                   <Col  xxl={6} xl={6} lg={6} className='pt-130 inner'>
                     <div className={styles.web1}> 
                     <Link  href="/" ref={cursorRef}>
                     <Image src={Jokr} className={styles.animatedimage} alt="Your Animated Image"  />
@@ -232,13 +237,13 @@ Mobile app design for a fast grocery delivery startup</p>
                         <li>UI/UX</li>
                         <li>Startup</li>
                         <li>Consumer</li>
-                        
                       </ul>
                     </div>
                    </Col>
                 </Row>
+
                 <Row className='justify-content-center align-items-center'>
-                   <Col lg={10} className='pt-130 inner'>
+                   <Col xxl={10} xl={10} lg={10} className='pt-130 inner'>
                     <div className={styles.web1}> 
                     <Link  href="/" ref={cursorRef}>
                     <Image src={Marqeta} className={styles.animatedimage} alt="Your Animated Image"  />
@@ -253,11 +258,12 @@ Mobile app design for a fast grocery delivery startup</p>
                       </ul>
                     </div>
                    </Col>
-                   <Col lg={2}></Col>
+                   <Col xxl={2} xl={2} lg={2}></Col>
                 </Row>
+                
               </Container>
-              <div className='ball' ref={cursorRef}></div>
-          </section>
+            <div className='ball' ref={cursorRef}></div>
+        </section>
         </>
     )
 }

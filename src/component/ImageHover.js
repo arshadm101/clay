@@ -65,7 +65,7 @@ const ImageHover = () => {
     <>
       <Container>
         <Row className="pt-130 pb-65 text-container">
-          <Col lg={6} >
+          <Col xxl={6} xl={6} lg={6} >
             
             <div>
             <h2 className={styles.Heading_level_1}>Clients</h2>
@@ -76,7 +76,7 @@ const ImageHover = () => {
         </Row>
         
         <Row>
-        <Col lg={4}>
+        <Col xxl={4} xl={4} lg={4}>
             <Link href="#" className="hover-link text">
               <div className={styles.linkover}>
                 <h4 className={styles.linkTitle}>Meta</h4>
@@ -87,7 +87,7 @@ const ImageHover = () => {
               </div>
             </Link>
           </Col>
-          <Col lg={4}>
+          <Col xxl={4} xl={4} lg={4}>
             <Link href="#" className="hover-link text">
               <div className={styles.linkover}>
                 <h4 className={styles.linkTitle}>Google</h4>
@@ -98,7 +98,7 @@ const ImageHover = () => {
               </div>
             </Link>
           </Col>
-          <Col lg={4}>
+          <Col xxl={4} xl={4} lg={4}>
 
             <Link href="#" className="hover-link text">
               <div className={styles.linkover}>
@@ -111,7 +111,7 @@ const ImageHover = () => {
             </Link>
       
           </Col>
-          <Col lg={4}>
+          <Col xxl={4} xl={4} lg={4}>
           
             <Link href="#" className="hover-link text">
               <div className={styles.linkover}>
@@ -127,7 +127,7 @@ const ImageHover = () => {
             </Link>
         
           </Col>
-          <Col lg={4}>
+          <Col xxl={4} xl={4} lg={4}>
           
             <Link href="#" className="hover-link text">
               <div className={styles.linkover}>
@@ -142,7 +142,7 @@ const ImageHover = () => {
             </Link>
         
           </Col>
-          <Col lg={4}>
+          <Col xxl={4} xl={4} lg={4}>
           
             <Link href="#" className="hover-link text">
               <div className={styles.linkover}>
@@ -157,7 +157,7 @@ const ImageHover = () => {
             </Link>
       
           </Col>
-          <Col lg={4}>
+          <Col xxl={4} xl={4} lg={4}>
           
             <Link href="#" className="hover-link text">
               <div className={styles.linkover}>
@@ -170,7 +170,7 @@ const ImageHover = () => {
             </Link>
         
           </Col>
-          <Col lg={4}>
+          <Col xxl={4} xl={4} lg={4}>
           
             <Link href="#" className="hover-link text">
               <div className={styles.linkover}>
@@ -186,7 +186,7 @@ const ImageHover = () => {
             </Link>
         
           </Col>
-          <Col lg={4}>
+          <Col xxl={4} xl={4} lg={4}>
           
             <Link href="#" className="hover-link text">
               <div className={styles.linkover}>
@@ -199,7 +199,7 @@ const ImageHover = () => {
             </Link>
         
           </Col>
-          <Col lg={4}>
+          <Col xxl={4} xl={4} lg={4}>
           
             <Link href="#" className="hover-link text">
               <div className={styles.linkover}>
@@ -214,7 +214,7 @@ const ImageHover = () => {
             </Link>
         
           </Col>
-          <Col lg={4}>
+          <Col xxl={4} xl={4} lg={4}>
             <Link href="#" className="hover-link text">
               <div className={styles.linkover}>
                 <h4 className={styles.linkTitle}>Cisco</h4>
@@ -225,7 +225,7 @@ const ImageHover = () => {
               </div>
             </Link>
           </Col>
-          <Col lg={4}>
+          <Col xxl={4} xl={4} lg={4}>
             <Link href="#" className="hover-link text">
               <div className={styles.linkover}>
                 <h4 className={styles.linkTitle}>Marqeta</h4>
@@ -237,7 +237,7 @@ const ImageHover = () => {
               </div>
             </Link>
           </Col>
-          <Col lg={4}>
+          <Col xxl={4} xl={4} lg={4}>
             <Link href="#" className="hover-link text">
               <div className={styles.linkover}>
                 <h4 className={styles.linkTitle}>Coca-Cola</h4>
@@ -248,7 +248,7 @@ const ImageHover = () => {
               </div>
             </Link>
           </Col>
-          <Col lg={4}>
+          <Col xxl={4} xl={4} lg={4}>
             <Link href="#" className="hover-link text">
               <div className={styles.linkover}>
                 <h4 className={styles.linkTitle}>Fossil</h4>
@@ -259,7 +259,7 @@ const ImageHover = () => {
               </div>
             </Link>
           </Col>
-          <Col lg={4}>
+          <Col xxl={4} xl={4} lg={4}>
             <Link href="#" className="hover-link text">
               <div className={styles.linkover}>
                 <h4 className={styles.linkTitle}>Zenefits</h4>
@@ -270,7 +270,7 @@ const ImageHover = () => {
               </div>
             </Link>
           </Col>
-          <Col lg={4}>
+          <Col xxl={4} xl={4} lg={4}>
             <Link href="#" className="hover-link text">
               <div className={styles.linkover}>
                 <h4 className={styles.linkTitle}>STC Bank
@@ -282,7 +282,7 @@ const ImageHover = () => {
               </div>
             </Link>
           </Col>
-          <Col lg={4}>
+          <Col xxl={4} xl={4} lg={4}>
             <Link href="#" className="hover-link text">
               <div className={styles.linkover}>
                 <h4 className={styles.linkTitle}>Impossible</h4>
@@ -293,7 +293,7 @@ const ImageHover = () => {
               </div>
             </Link>
           </Col>
-          <Col lg={4}>
+          <Col xxl={4} xl={4} lg={4}>
             <Link href="#" className="hover-link text">
               <div className={styles.linkover}>
                 <h4 className={styles.linkTitle}>AppDynamics</h4>
@@ -304,7 +304,7 @@ const ImageHover = () => {
               </div>
             </Link>
           </Col>
-          <Col lg={4}>
+          <Col xxl={4} xl={4} lg={4}>
           
             <Link href="#" className="hover-link text">
               <div className={styles.linkover}>
@@ -316,7 +316,7 @@ const ImageHover = () => {
               </div>
             </Link>
           </Col>
-          <Col lg={4}>
+          <Col xxl={4} xl={4} lg={4}>
             <Link href="#" className="hover-link text">
               <div className={styles.linkover}>
                 <h4 className={styles.linkTitle}>T-Mobile</h4>
@@ -327,7 +327,7 @@ const ImageHover = () => {
               </div>
             </Link>
           </Col>
-          <Col lg={4}>
+          <Col xxl={4} xl={4} lg={4}>
             <Link href="#" className="hover-link text">
               <div className={styles.linkover}>
                 <h4 className={styles.linkTitle}>VMware</h4>
@@ -338,7 +338,7 @@ const ImageHover = () => {
               </div>
             </Link>
           </Col>
-          <Col lg={4}>
+          <Col xxl={4} xl={4} lg={4}>
           
             <Link href="#" className="hover-link text">
               <div className={styles.linkover}>
@@ -351,7 +351,7 @@ const ImageHover = () => {
             </Link>
         
           </Col>
-          <Col lg={4}>
+          <Col xxl={4} xl={4} lg={4}>
           
             <Link href="#" className="hover-link text">
               <div className={styles.linkover}>
@@ -364,7 +364,7 @@ const ImageHover = () => {
             </Link>
         
           </Col>
-          <Col lg={4}>
+          <Col xxl={4} xl={4} lg={4}>
           
             <Link href="#" className="hover-link text">
               <div className={styles.linkover}>
@@ -378,7 +378,7 @@ const ImageHover = () => {
             </Link>
         
           </Col>
-          <Col lg={4}>
+          <Col xxl={4} xl={4} lg={4}>
           
             <Link href="#" className="hover-link text">
               <div className={styles.linkover}>
@@ -392,7 +392,7 @@ const ImageHover = () => {
             </Link>
         
           </Col>
-          <Col lg={4}>
+          <Col xxl={4} xl={4} lg={4}>
           
             <Link href="#" className="hover-link text">
               <div className={styles.linkover}>
@@ -405,7 +405,7 @@ const ImageHover = () => {
             </Link>
         
           </Col>
-          <Col lg={4}>
+          <Col xxl={4} xl={4} lg={4}>
           
             <Link href="#" className="hover-link text">
               <div className={styles.linkover}>

@@ -10,26 +10,37 @@ import Wealth from 'public/images/wealth.webp'
 import Jokr from 'public/images/jokr.webp'
 import Marqeta from 'public/images/marqeta.webp'
 import { Container,Col,Row, } from "react-bootstrap";
-import styles from '../styles/webprojects.module.css'
-import Styles from '../styles/CleientsLogo.module.css'
-
-import React, { useEffect, useRef } from 'react';
+import styles from '../styles/Portfolio.module.css'
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+import React, { useEffect, useRef, useState } from 'react';
 // import ThreeScene from './ThreeScene';
 // import ImageWithShader from '../component/ImageWithShader';
 import gsap from 'gsap';
+gsap.registerPlugin (ScrollTrigger);
 
 const Webprojects = () => {
+
   const cursorRef = useRef(null);
-
   useEffect(() => {
+  var targets = gsap.utils.toArray(".Section1"); 
+    // GSAP scrollTrigger BATCH
+    ScrollTrigger.batch(".inner", {
+      onEnter: batch => gsap.to(batch, {duration:1, opacity: 1, y: 0, stagger: {each: 0.15, grid: [1, 3]}, overwrite: true}),
+      onLeave: batch => gsap.set(batch, {opacity: 0, y: -200, overwrite: true}),
+      onEnterBack: batch => gsap.to(batch, {opacity: 1, y: 0, stagger: 0.15, overwrite: true}),
+      onLeaveBack: batch => gsap.set(batch, {opacity: 0, y: 200, overwrite: true})
+    });
+  
+   ScrollTrigger.addEventListener("refreshInit", () => gsap.set(".inner", {y: 0}));
+   gsap.set ('.inner', {y:200});
 
-    
+   gsap.to(".inner", {delay:.4, duration:1, autoAlpha:1, y:0, ease: "power2.out",  stagger: {amount: .25}});
+
     gsap.set(cursorRef.current, { xPercent: -50, yPercent: -50 });
 
     const pos = { x: 0, y: 0 };
     const mouse = { x: pos.x, y: pos.y };
     const speed = 0.2;
-
     const xSet = gsap.quickSetter(cursorRef.current, "x", "px");
     const ySet = gsap.quickSetter(cursorRef.current, "y", "px");
 
@@ -43,15 +54,12 @@ const Webprojects = () => {
     gsap.ticker.add(() => {
       // Adjust speed for higher refresh monitors
       const dt = 1.0 - Math.pow(1.0 - speed, gsap.ticker.deltaRatio());
-
       pos.x += (mouse.x - pos.x) * dt;
       pos.y += (mouse.y - pos.y) * dt;
       xSet(pos.x);
       ySet(pos.y);
     });
 
-
-    
     // Cleanup event listener
     return () => {
       document.removeEventListener("mousemove", handleMouseMove);
@@ -59,13 +67,14 @@ const Webprojects = () => {
   }, []);
     return (
         <>
-          <section className={`${styles.Section1}`} >
+      
+          <section className={`${styles.Section1} pb-130`} >
               <Container>
-                <Row>
-                   <Col lg={6}>
+                <Row className='justify-content-center align-items-center'>
+                   <Col lg={6} className='inner'>
                     <div className={styles.web1}> 
-                    <Link  href="/" ref={cursorRef}>
-                    <Image src={Slack} className={styles.animatedimage} alt="Your Animated Image"  height={500} width={500} />
+                    <Link  href="/" ref={cursorRef} >
+                    <Image src={Slack} className={styles.animatedimage} alt="Your Animated Image"   />
                     </Link>
                       <h4 className={`${styles.headingh4} mt-4  secondary-font fw700`}>Slack </h4>
                       <p className='text'>Designing and building Slack’s interactive demo experience</p>
@@ -76,10 +85,11 @@ const Webprojects = () => {
                       </ul>
                     </div>
                    </Col>
-                   <Col lg={6} className='pt-130'>
+
+                   <Col lg={6} className='pt-130 inner'>
                     <div className={styles.web1}> 
                     <Link  href="/" ref={cursorRef}>
-                    <Image src={Cornerston} className={styles.animatedimage} alt="Your Animated Image"  height={500} width={500} />
+                    <Image src={Cornerston} className={styles.animatedimage} alt="Your Animated Image"   />
                     </Link>
                       <h4 className={`${styles.headingh4} mt-4  secondary-font fw700`}>Cornerstone </h4>
                       <p className='text'>
@@ -93,8 +103,8 @@ Web experience for an enterprise people development platform</p>
                     </div>
                    </Col>
                 </Row>
-                <Row>
-                   <Col lg={10} className='pt-130'>
+                <Row className='justify-content-center align-items-center'>
+                   <Col lg={10} className='pt-130 inner'>
                     <div className={styles.web1}> 
                     <Link  href="/" ref={cursorRef}>
                     <Image src={Animatedbacktext} className={styles.animatedimage} alt="Your Animated Image"  />
@@ -111,10 +121,10 @@ Web experience for an enterprise people development platform</p>
                    <Col lg={2}></Col>
                 </Row>
                 <Row className='pt-130'>
-                <Col lg={6} className='pt-130'>
+                <Col lg={6} className='pt-130 inner'>
                     <div className={styles.web1}> 
                     <Link  href="/" ref={cursorRef}>
-                    <Image src={Ajuice} alt="Your Animated Image" className={styles.animatedimage}  height={500} width={500} />
+                    <Image src={Ajuice} alt="Your Animated Image" className={styles.animatedimage}   />
                     </Link>
                       <h4 className={`${styles.headingh4} mt-4  secondary-font fw700`}>Joe & The Juice </h4>
                       <p className='text'>A digital commerce and loyalty app for a global coffee shop chain</p>
@@ -125,10 +135,10 @@ Web experience for an enterprise people development platform</p>
                       </ul>
                     </div>
                    </Col>
-                   <Col lg={6}>
+                   <Col lg={6} className='inner'>
                     <div className={styles.web1}> 
                     <Link  href="/" ref={cursorRef}>
-                    <Image src={Snapchat} alt="Your Animated Image" className={styles.animatedimage}  height={500} width={500} />
+                    <Image src={Snapchat} alt="Your Animated Image" className={styles.animatedimage}   />
                     </Link>
                       <h4 className={`${styles.headingh4} mt-4  secondary-font fw700`}>SnapChat </h4>
                       <p className='text'>Integrating augmented reality to elevate social commerce</p>
@@ -139,11 +149,10 @@ Web experience for an enterprise people development platform</p>
                       </ul>
                     </div>
                    </Col>
-                  
                 </Row>
-                <Row className='pt-130'>
+                <Row className='pt-130 justify-content-center align-items-center'>
                   <Col lg={2}></Col>
-                   <Col lg={10}>
+                   <Col lg={10} className='inner'>
                     <div className={styles.web1}> 
                     <Link  href="/" ref={cursorRef}>
                     <Image src={Noun} className={styles.animatedimage} alt="Your Animated Image"  />
@@ -158,11 +167,11 @@ Web experience for an enterprise people development platform</p>
                     </div>
                    </Col>
                 </Row> 
-                <Row className='pt-130'>
-                   <Col lg={6}>
+                <Row className='pt-130 inner justify-content-center align-items-center'>
+                   <Col lg={6} className='inner'>
                     <div className={styles.web1}> 
                     <Link  href="/" ref={cursorRef}>
-                    <Image src={Wealth} className={styles.animatedimage} alt="Your Animated Image"  height={500} width={500} />
+                    <Image src={Wealth} className={styles.animatedimage} alt="Your Animated Image" />
                     </Link>
                       <h4 className={`${styles.headingh4} mt-4  secondary-font fw700`}>Wealth </h4>
                       <p className='text'>Designing a self-service digital estate planning platform</p>
@@ -174,10 +183,10 @@ Web experience for an enterprise people development platform</p>
                       </ul>
                     </div>
                    </Col>
-                   <Col lg={6} className='pt-130'>
+                   <Col lg={6} className='pt-130 inner'>
                     <div className={styles.web1}> 
                     <Link  href="/" ref={cursorRef}>
-                    <Image src={Jokr} className={styles.animatedimage} alt="Your Animated Image"  height={500} width={500} />
+                    <Image src={Jokr} className={styles.animatedimage} alt="Your Animated Image"  />
                     </Link>
                       <h4 className={`${styles.headingh4} mt-4  secondary-font fw700`}>JOKR </h4>
                       <p className='text'>
@@ -192,8 +201,8 @@ Mobile app design for a fast grocery delivery startup</p>
                     </div>
                    </Col>
                 </Row>
-                <Row>
-                   <Col lg={10} className='pt-130'>
+                <Row className='justify-content-center align-items-center'>
+                   <Col lg={10} className='pt-130 inner'>
                     <div className={styles.web1}> 
                     <Link  href="/" ref={cursorRef}>
                     <Image src={Marqeta} className={styles.animatedimage} alt="Your Animated Image"  />
@@ -210,17 +219,6 @@ Mobile app design for a fast grocery delivery startup</p>
                    </Col>
                    <Col lg={2}></Col>
                 </Row>
-
-                <Row className='pt-65 pb-65'>
-            <Col lg={12}>
-                <div className='text-center'>
-                   <Link href='' className={Styles.links}>
-                 <span>View All Clients <span><svg viewBox="0 0 24 24" preserveAspectRatio="none" fill="currentColor" role="presentation" className="LinkSanity_Icon__KHh7R" xmlns="http://www.w3.org/2000/svg"><path d="M16.6075 11.8572L13.255 8.40897L14.1388 7.5L19 12.5L14.1388 17.5L13.255 16.591L16.6075 13.1428H5V11.8572H16.6075Z"></path></svg></span></span>
-                 <span className={Styles.bottom_border}></span>
-                    </Link> 
-                </div>
-            </Col>
-          </Row>
               </Container>
               <div className='ball' ref={cursorRef}></div>
           </section>

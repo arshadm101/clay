@@ -38,15 +38,15 @@ function BrandCollaps() {
             <section className='pt-130 pb-65'>
                     <Container>
                         <Row>
-                            <Col lg={6}>
+                            <Col xxl={6} xl={6} lg={6}>
                                 <h4 className='h4-font'>Based in San Francisco, we strengthen brands through exceptional digital experiences for companies worldwide.</h4>
                             </Col>
-                            <Col lg={2}>
+                            <Col xxl={2} xl={2} lg={2}>
                                 <div>
 <Image src={currentImage} alt={currentImageDescription} width={400} height={400} onError={(e) => { console.error('Image load error:', e);}} />
                                 </div>
                             </Col>
-                            <Col lg={4} className='brands'>
+                            <Col xxl={4} xl={4} lg={4} className='brands'>
                                 <Accordion flush>
                                     <Accordion.Item eventKey='0'>
                                         <Accordion.Header  onMouseEnter={handleHover}  onMouseLeave={handleHover} onClick={() => handleTabClick(0)}>Branding</Accordion.Header>

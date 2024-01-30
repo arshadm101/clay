@@ -154,3 +154,19 @@ li .active::before{
     content: "";
     border-radius: 50%;
 }
+
+
+/* @media(max-width:767px){
+  h2 {
+    font-size: 40px !important;
+    line-height: 40px;
+  }
+} */
+
+@media(max-width:767px){
+  .Heading_level_1{
+    font-size: 50px;
+    line-height: 55px;
+  }
+}
+

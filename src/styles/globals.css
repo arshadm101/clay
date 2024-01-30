@@ -32,8 +32,18 @@
   --menu-follow-delay: 0ms;
   --primaryfont:UniversalSans-500,Arial,sans-serif;
   --secondary:UniversalSans-740,Arial,sans-serif;
+ 
 
 }
+
+.navbar-dark, .navbar[data-bs-theme=dark]{
+  --bs-navbar-toggler-icon-bg:url(
+    "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28191, 191, 191, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important
+}
+/* 
+.navbar-dark, .navbar[data-bs-theme=dark]{
+  --bs-navbar-toggler-icon-bg:url(/public/images/menu-left.svg);
+} */
 body{
   height: auto;
   -webkit-font-smoothing: antialiased;
@@ -41,6 +51,7 @@ body{
   -webkit-tap-highlight-color: transparent;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
+  overflow-x: hidden;
 }
 
 ol, ul {
@@ -60,7 +71,7 @@ ol, ul {
   font-weight: 500;
 }
 .text{
-  font-family: UniversalSans-500,Arial,sans-serif;
+    font-family: UniversalSans-500,Arial,sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 120%;
@@ -353,13 +364,15 @@ address {
 }
 
 /* CURSOR */
+.Section1{
+  position: relative;
+}
 .ball {
   position: fixed;
   top: 0;
   left: 0;
   border-radius: 50%;
   pointer-events: none;
-  
 }
 .web1:hover .ball{
   opacity: 1;
@@ -401,6 +414,12 @@ address {
 .swiper-button-prev:after{
   background-image:url(/public/images/icon-pre.png) !important;
 }
+
+.swiper-button-next, .swiper-button-prev {
+  background-image: url('/public/images/icon-next.png'); /* Replace with the path to your icon image */
+  background-size: contain;
+}
+
 .swiper-wrapper{
   align-items: center;
   justify-content: center;
@@ -413,7 +432,7 @@ address {
 .swiper-container{
   position: relative;
 }
-/*  */
+
 /* styles/globals.css */
 .cursor {
   position: fixed;
@@ -438,6 +457,18 @@ address {
   margin: 20px;
 }
 
+.hover-link1{
+  font-size: 18px; 
+  color: #333; 
+  text-decoration: none;
+  position: relative;
+  display: block;
+  margin: 0px;
+}
+.hover-link1:hover .hover-image11 {
+  opacity: 1;
+}
+
 .hover-image {
   position: absolute;
   top: 0%;
@@ -452,55 +483,27 @@ address {
 .hover-link:hover .hover-image {
   opacity: 1;
 }
-
-/* 
-
-.swiper-button-prev,
-.swiper-button-next {
-  display: none; 
+.hover-image1 {
+  position: absolute;
+  top: 0%;
+  left: 90%;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  height: 300px;
+  width: 300px;
 }
-
-.swiper-container:hover .swiper-button-prev,
-.swiper-container:hover .swiper-button-next {
-  display: block; 
+.hover-image11 {
+  position: absolute;
+  top: 0%;
+  left:20%;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  height: auto;
+  width: 60%;
 }
-
-
-.swiper-button-prev {
-  left: 10px;
+.hover-link:hover .hover-image1 {
+  opacity: 1;
 }
-
-.swiper-button-next {
-  right: 10px;
-}
-
-.swiper-button-prev {
-  border: 1px solid #111;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: #111;
-  left: 30px;
-}
-  .swiper-button-prev:hover {
-    border: 1px solid #fff;
-}
-.swiper-button-nex {
-  border: 1px solid #111;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: #111;
-  right: 30px;
-}
-.swiper-button-nex:hover {
-    border: 1px solid #fff;
-}
-
-.swiper-button-next:hover:after,
-.swiper-button-prev:hover:after {
-color: #fff;
-} */
 
 .headerblack{
   background: var(--color-darkMidnight)
@@ -512,3 +515,4 @@ color: #fff;
 .nav-link:hover, .nav-link:focus{
   color: #000 !important
 }
+

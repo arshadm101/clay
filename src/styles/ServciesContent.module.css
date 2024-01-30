@@ -119,32 +119,18 @@
 }
 .relativesec{
   position: relative;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
- /* .VidMss{
-  position: absolute;
-  width: 900px;
-  height: 900px;
-  z-index: -1;
-  right: -200px;
- }
- .VidMss1{
-  position: absolute;
-  width: 900px;
-  height: 900px;
-  z-index: -1;
-  right: -200px;
- } */
+ 
  .absoluteBanner{
   z-index: 2;
-    /* top: 0; */
-    /* position: relative; */
  }
  .Industry{
   background-color: var(--color-darkMidnight);
  }
- /* .VidM{
-  width: 700px;
-  height: 700px;
-  top: -100px;
- } */
+
+ @media(max-width:767px){  
+  .Heading_level_1{
+    font-size: 50px;
+  }
+ }

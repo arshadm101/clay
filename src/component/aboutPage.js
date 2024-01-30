@@ -124,7 +124,7 @@ const AboutContent = ({  }) => {
      {/* ref={siteImg} */}
       <section className={styles.imgrelative} ref={imageRef} >
             <Container>
-                <div class="video">
+                <div className="video">
                     <Image src={AboutBanners} alt='Image' />
                 </div>
             </Container>
@@ -133,21 +133,21 @@ const AboutContent = ({  }) => {
     <section>
         <Container>
             <Row className='pt-130 pb-65'>
-                    <Col lg={4}>
+                    <Col xxl={4} xl={4} lg={4} className='pb-4 pt-4'>
                     <h2 className={styles.Heading_level_number}>86</h2>
                     <p className={styles.para0}>Global Team Members</p>          
                     </Col>
-                    <Col lg={4}>
+                    <Col xxl={4} xl={4} lg={4} className='pb-4 pt-4'>
                     <h2 className={styles.Heading_level_number}>14</h2>
                     <p className={styles.para0}>Years In Business</p>
                     </Col>
-                    <Col lg={4}>
+                    <Col xxl={4} xl={4} lg={4} className='pb-4 pt-4'>
                     <h2 className={styles.Heading_level_number}>500+</h2>
                     <p className={styles.para0}>Projects Completed</p>
                     </Col>
                 </Row>
                 <Row className='pt-130 pb-65'>
-                    <Col lg={12}>
+                    <Col xxl={12} xl={12} lg={12}>
                     <h2 className={styles.Heading_level_number}>San Francisco</h2>
                     <p className={styles.para0}>Headquarters</p>          
                     </Col>
@@ -160,7 +160,7 @@ const AboutContent = ({  }) => {
     <section className={`pt-5 pb-130`}>
         <Container>
             <Row>
-                <Col lg={9}>
+                <Col xxl={9} xl={9} lg={9}>
                     <p className={styles.para}>
                     We are a global group of strategists, designers, and engineers building notable brands and premier digital experiences that captivate users worldwide.
 <br/><br/>
@@ -174,7 +174,7 @@ Our unified approach ensures scalability and consistency across all brand touchp
     <section>
         <Container>
             <Row className='justify-content-center align-items-center pt-130 '>
-                <Col lg={7}>
+                <Col xxl={7} xl={7} lg={7}>
                   
                         <h4 className={styles.Heading_level_0}>01</h4>
                         <h2 className={styles.Heading_level_12}>Teams Led by Co-Founders</h2>
@@ -183,12 +183,12 @@ Our unified approach ensures scalability and consistency across all brand touchp
                         <p className={styles.para0}>At Clay, our co-founders lead dedicated, senior-level teams with cross-disciplinary expertise to ensure project success.</p>  
 
                 </Col>
-                <Col lg={5}>
+                <Col  xxl={5} xl={5} lg={5}>
                     <Image src={TeamLead} className='px-4 box' alt='Image'/>
                 </Col>
             </Row>
             <Row className='justify-content-center align-items-center pt-130'>
-                <Col lg={7}>
+                <Col xxl={7} xl={7} lg={7}>
                   
                         <h4 className={styles.Heading_level_0}>02</h4>
                         <h2 className={styles.Heading_level_12}>Collaboration Is Key</h2>
@@ -198,12 +198,12 @@ Our unified approach ensures scalability and consistency across all brand touchp
                         <p className={styles.para0}>Our work with startups has made us more agile, and our experience with enterprise companies has allowed us to develop a refined approach to project management.</p>  
 
                 </Col>
-                <Col lg={5}>
+                <Col xxl={5} xl={5} lg={5}>
                     <Image src={TeamLead} className='px-4 box1' alt='Image'/>
                 </Col>
             </Row>
             <Row className='justify-content-center align-items-center pt-130 pb-130'>
-                <Col lg={7}>
+                <Col xxl={7} xl={7} lg={7}>
                   
                         <h4 className={styles.Heading_level_0}>03</h4>
                         <h2 className={styles.Heading_level_12}>Our Work Is Future-Proof</h2>
@@ -212,7 +212,7 @@ Our unified approach ensures scalability and consistency across all brand touchp
                         <p className={styles.para0}>At Clay, our co-founders lead dedicated, senior-level teams with cross-disciplinary expertise to ensure project success.</p>  
 
                 </Col>
-                <Col lg={5}>
+                <Col xxl={5} xl={5} lg={5}>
                     <Image src={TeamLead} className='px-4 box2' alt='Image'/>
                 </Col>
             </Row>

@@ -49,3 +49,9 @@
   transition-delay: var(--menu-follow-delay);
   transition-duration: .9s,1.5s;
 }
+
+@media(max-width:767px){  
+  .Heading_level_1{
+   font-size: 50px; 
+  }
+}

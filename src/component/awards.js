@@ -79,7 +79,7 @@ const Awards = () => {
       <section className={`${styles.Industry} pb-130 position-relative`} >
         <Container className='pt-130'>
           <Row  className='pt-5 pb-5'>
-            <Col lg={7}>
+            <Col xxl={7} xl={7} lg={7}>
               <div>
                   <h2 className={`${styles.Heading_level_1} text-white `}>Awards</h2>
               </div>

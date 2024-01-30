@@ -122,3 +122,15 @@
 .sectionback{
     overflow-x: hidden;
 }
+
+@media(max-width:767px){
+    .VidM{
+        position: relative;
+        height: auto;
+        padding-top: 50px;
+        z-index: 0;
+    }
+    .CalltoAction_links{
+        z-index: 2;
+    }
+}

@@ -179,3 +179,21 @@
   position: relative;
   z-index: 20;
 }
+
+
+@media(max-width:767px){
+  .Heading_level_1{
+    font-size: 60px;
+   
+  }
+  .Heading_level_number{
+    font-size: 60px;
+    padding-bottom: 0px;
+  }
+  .Heading_level_12{
+    font-size: 60px;
+  }
+  .Heading_level_0{
+    font-size: 60px;
+  }
+}

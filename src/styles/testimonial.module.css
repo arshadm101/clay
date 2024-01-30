@@ -27,10 +27,7 @@
 }
 .black:hover{
     color: var(--color-grey);}
-/* .sliderHeding{
-        opacity: 0.5;
-        transition: all 1s ease-in-out;
-    } */
+
 .slider{
     height: 500px;
         opacity: 1;
@@ -88,3 +85,12 @@
             width: 100%;
         }
     }
+
+
+
+    @media(max-width:767px){  
+        .heading{
+            font-size: 34px;        
+        }
+    }
+   

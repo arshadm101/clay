@@ -24,10 +24,10 @@ const Faqs = () => {
            <section className={`${styles.bgcolor} pt-130 pb-65`}>
                 <Container>
                     <Row>
-                        <Col lg={12} className='pb-65'>
+                        <Col xxl={12} xl={12} lg={12} className='pb-65'>
                                 <h2 className={`${styles.heading2} text-white`}>FAQS.</h2>
                         </Col>
-                        <Col lg={12} className={`${styles.brands} branding`}>
+                        <Col  xxl={12} xl={12} lg={12} className={`${styles.brands} branding`}>
                             <Accordion defaultActiveKey='0' flush>
                                 <Accordion.Item className={styles.accordionitemHome}>
                                     <Accordion.Header onMouseEnter={handleHover}

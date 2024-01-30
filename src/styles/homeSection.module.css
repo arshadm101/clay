@@ -82,3 +82,24 @@
     width: 100px;
     height: 100px;
 } */
+
+/* @media(max-width:767px){
+    h2 {
+      font-size: 40px !important;
+      line-height: 40px;
+    }
+  } */
+  @media(max-width:767px){
+  .Heading_level_1{
+    font-size: 55px;
+    line-height: 110%;
+  }
+  .webprojects_Section1 .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .CalltoAction{
+    position: relative;
+  }
+}

@@ -12,7 +12,7 @@ return (
         <section className={`${styles.sectionback} pt-130 pb-100`}>
             <Container>
                 <Row>
-                    <Col lg={7} className={`${styles.trustVid}`}>
+                    <Col xxl={7} xl={7} lg={7} className={`${styles.trustVid}`}>
                     <h2 className={`${styles.Heading_level_1}`}>We transform companies through design innovation
                     </h2>
                     <h4 className={`${styles.para2} text`}>A full-service creative agency designing and building inventive digital experiences across all platforms and brand touchpoints.
@@ -29,7 +29,7 @@ return (
                         </Link>
                     </div>
                     </Col>
-                    <Col lg={5}>
+                    <Col xxl={5} xl={5} lg={5}>
                         <div className={`${styles.VidM}`} >
                             <video height={650} width={650} autoPlay className={`${styles.VidM}`} muted loop src="/torusblacke.mp4" type="video/mp4"></video>
                         </div>
@@ -42,7 +42,7 @@ return (
         <section className={`${styles.sectionback} pb-100`}>
         <Container>
                 <Row>
-                    <Col lg={7}>
+                    <Col xxl={7} xl={7} lg={7}>
                     <h4 className={`${styles.para2} text`}>A full-service creative agency designing and building inventive digital experiences across all platforms and brand touchpoints.
                     </h4>
                     <div className='text-left mt-5'>
@@ -57,7 +57,7 @@ return (
                         </Link>
                     </div>
                     </Col>
-                    <Col lg={5}>
+                    <Col xxl={5} xl={5} lg={5}>
                     </Col>
                 </Row>
             </Container>

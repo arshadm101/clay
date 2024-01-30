@@ -43,7 +43,7 @@ const HomeSections = () => {
           <section className={`${styles.Section1}`} >
             <Container>
                 <Row>
-                    <Col lg={12}>
+                    <Col xxl={12} xl={12} lg={12}>
                         <h1 className={`${styles.Heading_level_1} ${styles.Head_1}`} >
                             <span className={styles.LineByLine_Root} >
                                 <span className={styles.LineByLine_TextLineByLine_Text_visible}>
@@ -55,7 +55,7 @@ const HomeSections = () => {
                 </Row>
 
                 <Row className={styles.RowModel}> 
-                  <Col lg={12}>
+                  <Col xxl={12} xl={12} lg={12}>
                   <div className={styles.scrollimagecontainer}>
                     {/* <Image ref={imageRef} src={Homebanner} alt="Image" className="scroll-image" style={{ width: '100%' }} height={1000}
                     /> */}

@@ -97,17 +97,17 @@ const AboutContent = () => {
         </div>
       <Container className='pt-130'>
         <Row  className='pt-5 pb-5'>
-          <Col lg={7}>
+          <Col xxl={7} xl={7} lg={7}>
             <div>
-                <h2 className={`${styles.Heading_level_1} text-white `}>Capabilities</h2>
+                <h2 className={`${styles.Heading_level_1} text-white`}>Capabilities</h2>
             </div>
           </Col>
         </Row>
         <Row className='pt-5 pb-5 text-container'>
-          <Col lg={4}>
+          <Col xxl={4} xl={4} lg={4}>
             <h4 className={`${styles.Heading_level_11} text-white text`}>Branding</h4>                
           </Col>
-          <Col lg={4}>
+          <Col xxl={4} xl={4} lg={4}>
             <p className={`${styles.para2} text`}>Brand Strategy</p>
             <p className={`${styles.para2} text`}>Brand Architecture</p>
             <p className={`${styles.para2} text`}>Verbal Identity</p>
@@ -117,11 +117,11 @@ const AboutContent = () => {
           </Col>
         </Row>
         <Row className='pt-5 pb-5'>
-          <Col lg={4}>
+          <Col xxl={4} xl={4}  lg={4}>
             <h4 className={`${styles.Heading_level_11} text-white text`}>Digital Products
 </h4>                
           </Col>
-          <Col lg={4}>
+          <Col xxl={4} xl={4} lg={4}>
             <p className={`${styles.para2} text`}>Consumer & Enterprise Software
 </p>
             <p className={`${styles.para2} text`}>User Research & Testing
@@ -137,10 +137,10 @@ const AboutContent = () => {
           </Col>
         </Row>
         <Row className='pt-5 pb-5'>
-          <Col lg={4}>
+          <Col xxl={4} xl={4} lg={4}>
             <h4 className={`${styles.Heading_level_11} text-white text`}>Websites</h4>                
           </Col>
-          <Col lg={4}>
+          <Col xxl={4} xl={4} lg={4}>
             <p className={`${styles.para2} text`}>Content Strategy
 </p>
             <p className={`${styles.para2} text`}>Web Design
@@ -156,10 +156,10 @@ const AboutContent = () => {
           </Col>
         </Row>
         <Row className='pt-5 pb-5'>
-          <Col lg={4}>
+          <Col xxl={4} xl={4} lg={4}>
             <h4 className={`${styles.Heading_level_11} text-white text`}>Content</h4>                
           </Col>
-          <Col lg={4}>
+          <Col xxl={4} xl={4} lg={4}>
             <p className={`${styles.para2} text`}>Art Direction
 </p>
             <p className={`${styles.para2} text`}>Illustration & Graphic Design</p>
@@ -170,10 +170,10 @@ const AboutContent = () => {
           </Col>
         </Row>
         <Row className='pt-5 pb-5'>
-          <Col lg={4}>
+          <Col xxl={4} xl={4} lg={4}>
             <h4 className={`${styles.Heading_level_11} text-white text`}>Development</h4>                
           </Col>
-          <Col lg={4}>
+          <Col xxl={4} xl={4} lg={4}>
             <p className={`${styles.para2} text`}>Technology Consulting
 </p>
             <p className={`${styles.para2} text`}>Architecture Planning
@@ -189,8 +189,8 @@ const AboutContent = () => {
           </Col>
         </Row>
         <Row>
-            <Col lg={4}></Col>
-        <Col lg={8}>
+            <Col xxl={4} xl={4} lg={4}></Col>
+        <Col xxl={8} xl={8} lg={8}>
                     <div className='text-start'>
                     <Link href='/' className={styles.links}>
                             <span>All services<span><svg viewBox="0 0 24 24" preserveAspectRatio="none" fill="currentColor"
@@ -211,7 +211,7 @@ const AboutContent = () => {
            
       <Container className='pt-130'>
         <Row  className='pt-5 pb-5'>
-          <Col lg={7}>
+          <Col xxl={7} xl={7}  lg={7}>
             <div>
                 <h2 className={`${styles.Heading_level_1} text-white `}>Clients</h2>
             </div>
@@ -220,14 +220,14 @@ const AboutContent = () => {
        
         <Row className='jsutify-content-center align-items-center'>
         {imageSources.map((src, index) => (
-          <Col key={index} xs={6} md={3}>
+          <Col key={index} xs={6} md={3} xxl={3} xl={3}>
             <Image src={src} alt={`img${index + 1}`}   width={200} height={100}/>
           </Col>
         ))}
                   
         </Row>
         <Row>
-        <Col lg={12}>
+        <Col xxl={12} xl={12} lg={12}>
                     <div className='text-center pt-5'>
                     <Link href='/' className={styles.links}>
                             <span>View all clients<span><svg viewBox="0 0 24 24" preserveAspectRatio="none" fill="currentColor"

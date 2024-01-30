@@ -15,7 +15,7 @@ const Footer = () => {
           <footer className={styles.bgcolor}>
             <Container>
               <Row>
-                <Col lg={6}>
+                <Col xxl={6} xl={6} lg={6}>
                     <h1 className={styles.Heading_level_1}>Let’s Talk</h1>
                     <div>
                       <Link href='mailto:hey@clay.global' className={styles.links}>
@@ -24,9 +24,9 @@ const Footer = () => {
                         </Link> 
                     </div>
                 </Col>
-                <Col lg={2}>
+                <Col xxl={2} xl={2} lg={2}>
                 </Col>
-                <Col lg={4}>
+                <Col xxl={4} xl={4} lg={4}>
                   <div>
                       <ul className={styles.navlinksfooter1}>
                         <li>
@@ -64,7 +64,7 @@ const Footer = () => {
                 </Col>
               </Row>
               <Row>
-                <Col lg={6}>
+                <Col xxl={6} xl={6} lg={6}>
                 <div className='pt-5'>
                       <Link href='https://g.page/clayglobal?share' className={`${styles.links} mt-5`}>
                           <span className={styles.fonts20}>300 Broadway, San Francisco, CA 94133 </span>
@@ -73,10 +73,10 @@ const Footer = () => {
                     </div>
                  
                 </Col>
-                <Col lg={2}>
+                <Col xxl={2} xl={2} lg={2}>
 
                 </Col>
-                <Col lg={4}>
+                <Col xxl={4} xl={4} lg={4}>
                 <div className='pt-5'>
                       <ul className={styles.social}>
                         <li>
@@ -114,7 +114,7 @@ const Footer = () => {
                 </Col>
               </Row>
               <Row>
-                  <Col lg={6}>
+                  <Col xxl={6} xl={6} lg={6}>
                     <div className={styles.pt50}>
                           <ul className={styles.navlinksfooter}>
                             <li>
@@ -138,9 +138,9 @@ const Footer = () => {
                           </ul>
                     </div>
                   </Col>
-                  <Col lg={2}>
+                  <Col xxl={2} xl={2} lg={2}>
                   </Col>
-                  <Col lg={4}>
+                  <Col xxl={4} xl={4} lg={4}>
                     <div className={styles.pt50}>
                       <p className={styles.para3}>© 2016 – 2023 Clay Global, LLC</p>
                     </div>

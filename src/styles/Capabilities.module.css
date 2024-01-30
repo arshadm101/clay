@@ -190,10 +190,17 @@
 }
 
 .beforimg{
-   
     position: absolute;
     right: 0;
     height: 1000px;
     width: 805px;
     /* z-index: 1; */
+}
+
+@media(max-width:767px){
+  .Heading_level_1{
+    font-size: 50px;
+    z-index: 5;
+    position: relative;
+  }
 }

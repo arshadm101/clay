@@ -46,20 +46,19 @@ const testimonial = () => {
     const newSlide =
       direction === 'next'
         ? (activeSlide + 1) % slideData.length : (activeSlide - 1 + slideData.length) % slideData.length;
-
-
-    const currentSlidePosition = direction === 'next' ? '-100%' : '100%';
-    const newSlidePosition = '0';
+      const currentSlidePosition = direction === 'next' ? '-100%' : '100%';
+      const newSlidePosition = '0';
 
     gsap.fromTo(
       `.${styles.sliderHeading}`,
       {
         x: currentSlidePosition,
         opacity: 0, 
+        autoAlpha:1,
       },
       {
         x: newSlidePosition, 
-        opacity: 1, 
+        autoAlpha:1, 
         duration: 0.5,
         onComplete: () => {
           setActiveSlide(newSlide);

@@ -35,8 +35,8 @@ const CleientsLogo = () => {
       <section className={Styles.CleientsLogo}>
         <Container>
           <Row>
-            {Array.from({ length: 5 }).map((_, index) => (
-              <Col key={index}>
+            {/* {Array.from({ length: 12 }).map((_, index) => (
+              <Col key={index} lg={2}>
                 <div className={` ${Styles.logos} ${index === 0 ? Styles.fadeIn : ''}`}>
                   <Image
                     src={logos[(currentLogoIndex + index) % logos.length]}
@@ -46,10 +46,10 @@ const CleientsLogo = () => {
                   />
                 </div>
               </Col>
-            ))}
+            ))} */}
           </Row>
           <Row>
-            {Array.from({ length: 5 }).map((_, index) => (
+            {/* {Array.from({ length: 5 }).map((_, index) => (
               <Col key={index}>
                 <div className={` ${Styles.logos} ${index === 0 ? Styles.fadeIn : ''}`}>
                   <Image
@@ -60,10 +60,10 @@ const CleientsLogo = () => {
                   />
                 </div>
               </Col>
-            ))}
+            ))} */}
           </Row>
           <Row className='pt-65 pb-65'>
-            <Col lg={12}>
+            <Col xxl={12} xl={12} lg={12}>
                 <div className='text-center'>
                    <Link href='' className={Styles.links}>
                  <span>View All Clients <span><svg viewBox="0 0 24 24" preserveAspectRatio="none" fill="currentColor" role="presentation" className="LinkSanity_Icon__KHh7R" xmlns="http://www.w3.org/2000/svg"><path d="M16.6075 11.8572L13.255 8.40897L14.1388 7.5L19 12.5L14.1388 17.5L13.255 16.591L16.6075 13.1428H5V11.8572H16.6075Z"></path></svg></span></span>

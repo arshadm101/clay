@@ -125,7 +125,6 @@ gsap.to(image4, {
                             <div className={styles.Bannerback}>
                                 <div className={styles.hidedive}>
           <video className={`${styles.VidMss}`} width={600} height={600} autoPlay muted loop src="/squares.mp4" type="video/mp4"></video>
-
                                 </div>
                             </div>
                             <div className={`${styles.absoluteBanner} p-5`}>
@@ -145,7 +144,6 @@ gsap.to(image4, {
                         <div className='position-relative'>
                             <div className={styles.Bannerback}>
                                 <div className={styles.hidedive}>
-                                    {/* <Image src={collaps1} alt="Image" /> */}
                                     <video className={`${styles.VidMss1}`} width={600} height={600} autoPlay muted loop src="/sphere.mp4" type="video/mp4"></video>
                                 </div>
                             </div>
@@ -185,8 +183,6 @@ gsap.to(image4, {
                     <h2 className={styles.Heading_level_1}>Websites</h2>
                     <p className={styles.para2}>
                     A website is the most important channel to showcase your brand to customers. Our portfolio features award-winning websites designed to give users the best experience possible while also meeting business goals.
-
-
                     </p>
                     <div>
                         <ul className={styles.listtype}>
@@ -209,7 +205,7 @@ gsap.to(image4, {
                                 </div>
                             </div>
                             <div className={`${styles.absoluteBanner} p-5`}>
-                                <Image src={services3}  alt="Image"  ref={imageRef3} /> 
+                                <Image src={services3}  alt="Image"  ref={imageRef2} /> 
                             </div>
                         </div>
 
@@ -271,7 +267,7 @@ gsap.to(image4, {
                                 </div>
                             </div>
                             <div className={`${styles.absoluteBanner} p-5`}>
-                                <Image src={services5}   alt="Image" ref={imageRef3} /> 
+                                <Image src={services5}   alt="Image" ref={imageRef4} /> 
                             </div>
                         </div>
 
