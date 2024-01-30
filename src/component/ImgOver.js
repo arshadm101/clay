@@ -18,7 +18,7 @@ import mercari from '/public/images/client/mercari.webp';
 import moneylion from '/public/images/client/moneylion.webp';
 import clearbit from '/public/images/client/clearbit.webp';
 import onfido from '/public/images/client/onfido.webp';
-import LOreal from '/public/images/client/LOreal.webp';
+import loreal from '/public/images/client/loreal.webp';
 import adp from '/public/images/client/adp.webp';
 import vmware from '/public/images/client/vmware.webp';
 import okta from '/public/images/client/okta.webp';
@@ -216,7 +216,7 @@ const ImgOver = () => {
                   <h4 className={styles.linkTitle}>L’Oreal</h4>
                 </div>
               <div>
-                <Image src={LOreal} alt="Image 1"  width={500} height={500} ref={(el) => (imageRefs.current[14] = el)} className="hover-image11" />
+                <Image src={loreal} alt="Image 1"  width={500} height={500} ref={(el) => (imageRefs.current[14] = el)} className="hover-image11" />
               </div>
             </Link>
             <Link href="#" className="hover-link1 text">
